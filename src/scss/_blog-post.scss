@@ -1,0 +1,28 @@
+.blog__post {
+    &-content {
+        padding-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        gap: 55px;
+    }
+    &-aside {
+        width: 30%;
+        .blog__item {
+            width: 100%;
+        }
+        .blog__image-btn {
+            transform: translate(308px, 313px);
+        }
+    }
+    &-title {
+        padding-top: 48px;
+        &--yellow {
+            color: $yellowColor;
+        }
+    }
+    &-text {
+        padding-top: 48px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}

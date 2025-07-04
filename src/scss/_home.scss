@@ -1,0 +1,517 @@
+            .home {
+                .hero {
+                    padding-top: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &__content {
+                        &-btn {
+                            padding-top: 40px;
+                        }
+                    }
+                    &__title {
+                        max-width: 100%;
+                        padding-bottom: 40px;
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                    &__advantages {
+                        display: flex;
+                        gap: 106px;
+                        &-item {
+                            background-color: rgba($yellowColor, 0.3);
+                            background-size: cover;
+                            // background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            border-radius: 20px;
+                            padding: 24px 12px;
+                            max-width: 50%;
+                            position: relative;
+                            &::before {
+                                z-index: 100;
+                                content: "";
+                                background-image: url('../img/quote-up.svg');
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                top: 24px;
+                                left: 14px;
+                                width: 36px;
+                                height: 36px;
+                            }
+                            &-text {
+                                color: $darkGrey;
+                                margin-left: 84px;
+                                font-size: 20px;
+                                line-height: 1.5;
+                                font-weight: 500;
+                            }
+                        }
+                        &-content {
+                            &-stars {
+                                padding-bottom: 16px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            &-title {
+                                padding-bottom: 5px;
+                            }
+                            &-text {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1155px) {
+                .home .hero__advantages-item-text {
+                    margin-left: 60px;
+                }
+                .home .hero__advantages {
+                    gap: 24px;
+                }
+                .home .hero {
+                    align-items: flex-end;
+                }
+                .home {
+                    // padding-bottom: 40px;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {
+                .home .hero__advantages-item-text {
+                    font-size: 16px;
+                }
+                .hero__image {
+                    width: 50vh;
+                }
+            }
+            
+            .coaching {
+                border-radius: 100px;
+                background-color: $darkGrey;
+                color: $whiteColor;
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &__content {
+                    max-width: 50%;
+                    &-text {
+                        padding-bottom: 40px;
+                        color: #DDDDDD;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        p {
+                            padding-bottom: 24px;
+                        }
+                    }
+                    &-btn {
+                        padding-top: 74px;
+                    }
+                }
+                &__title {
+                    padding-bottom: 40px;
+                    &--yellow {
+                        color: $yellowColor;
+                    }
+                }
+                &__advantages {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-item {}
+                    &-title {
+                        color: $yellowColor;
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+            
+            .services {
+                padding-top: 100px;
+                &__content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-title {
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                }
+                &__wrapper {
+                    padding-top: 48px;
+                    padding-bottom: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 24px;
+                    .services__item {
+                        min-height: 415px;
+                        background-image: url('../img/service-image.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        max-width: 33%;
+                        padding: 40px;
+                        border-radius: 20px;
+                        &-content {
+                            height: 280px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-direction: column;
+                        }
+                        &-title {
+                            font-size: 54px;
+                            text-align: center;
+                            font-weight: 600;
+                            color: $whiteColor;
+                            padding-bottom: 16px;
+                            &--yellow {
+                                color: $yellowColor;
+                            }
+                        }
+                        &-text {
+                            text-align: center;
+                            color: $whiteColor;
+                            font-size: 20px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint992) {
+                .coaching__wrapper {
+                    align-items: flex-end
+                }
+                .coaching__advantages {
+                    margin-left: 20px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    // align-items: center;
+                    gap: 24px;
+                }
+                .coaching__content-text {
+                    font-size: 16px;
+                }
+                .coaching__title {
+                    padding-bottom: 25px;
+                }
+                .coaching__content-text {
+                    padding-bottom: 25px;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {}
+            
+            @media screen and (max-width: $breakpoint480) {}
+            
+            .about {
+                border-radius: 100px;
+                background-color: $darkGrey;
+                color: $whiteColor;
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &__content {
+                    max-width: 50%;
+                    &-title {
+                        padding-bottom: 40px;
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                    &-text {
+                        color: #DDDDDD;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        padding-bottom: 40px;
+                        p {
+                            padding-bottom: 24px;
+                        }
+                    }
+                }
+            }
+            
+            .shop {
+                padding-bottom: 100px;
+                &__content {
+                    padding-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-title {
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                }
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 24px;
+                    padding-top: 48px;
+                }
+                &__image {
+                    min-width: 416px;
+                    min-height: 432px;
+                    border-radius: 50px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        width: 174px;
+                        height: 174px;
+                        content: "";
+                        background-image: url('../img/curv.svg');
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 20%;
+                        bottom: -4px;
+                        right: -7px;
+                    }
+                    &-btn {
+                        transform: translate(305px, 315px);
+                        z-index: 99;
+                        border-radius: 50%;
+                        border: none;
+                        background-color: $deepGreenColor;
+                        width: 114px;
+                        height: 114px;
+                        margin: 0 auto;
+                        cursor: pointer;
+                        outline: none;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            
+            .shop__item-info {
+                font-size: 24px;
+                padding-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-actions {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                &-actions-price {
+                    margin-top: 24px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $whiteColor;
+                    background-color: $deepGreenColor;
+                    border-radius: 20px;
+                    padding: 16px 24px;
+                    display: block;
+                }
+                &-actions-btn--color {
+                    width: 24px;
+                    height: 24px;
+                    background-color: $deepGreenColor;
+                    border-radius: 50%;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    margin-left: 5px;
+                }
+                &-content {
+                    >* {
+                        display: block;
+                    }
+                    &--size {
+                        padding-bottom: 16px;
+                    }
+                    &--title {
+                        padding-bottom: 5px
+                    }
+                }
+            }
+            
+            .testimonials {
+                background-image: url('../img/testimonials.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 50px;
+                padding-bottom: 100px;
+                &__content {
+                    padding-top: 100px;
+                    &-title {
+                        max-width: 60%;
+                        margin: 0 auto;
+                        text-align: center;
+                        color: $whiteColor;
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                }
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 24px;
+                    padding-top: 48px;
+                }
+                &__item {
+                    min-width: 33%;
+                    color: $whiteColor;
+                    background-image: url('../img/testimonials-item-bg.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    border-radius: 20px;
+                    padding: 24px;
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        &-text--name {
+                            margin-bottom: 8px;
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+                        &-text--position {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                    &-rate {
+                        margin-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        &-number {
+                            font-size: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                    &-text {
+                        margin-top: 16px;
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            
+            .blog {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                &__content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-title {
+                        &--yellow {
+                            color: $yellowColor;
+                        }
+                    }
+                }
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 24px;
+                    padding-top: 48px;
+                }
+                &__item {
+                    &-info-tags {
+                        margin-top: 24px;
+                        &-item {
+                            text-transform: lowercase;
+                            display: inline-block;
+                            background-color: $deepGreenColor;
+                            border-radius: 30px;
+                            padding: 15px 28px;
+                            color: $whiteColor;
+                            font-size: 20px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            margin-right: 10px;
+                        }
+                    }
+                    &-info-content--title {
+                        margin-top: 16px;
+                        font-size: 24px;
+                        width: 80%;
+                        padding-bottom: 16px;
+                    }
+                    &-info-content-author {
+                        font-size: 20px;
+                        &::before {
+                            content: "";
+                            background-color: $yellowColor;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                    &-info-content-date {
+                        font-size: 20px;
+                        padding-left: 10px;
+                        &::before {
+                            content: "";
+                            background-color: $yellowColor;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                &__image {
+                    min-width: 416px;
+                    min-height: 432px;
+                    border-radius: 50px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        width: 174px;
+                        height: 174px;
+                        content: "";
+                        background-image: url('../img/curv.svg');
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 20%;
+                        bottom: -4px;
+                        right: -7px;
+                    }
+                    &-btn {
+                        transform: translate(338px, 313px);
+                        z-index: 99;
+                        border-radius: 50%;
+                        border: none;
+                        background-color: $deepGreenColor;
+                        width: 114px;
+                        height: 114px;
+                        margin: 0 auto;
+                        cursor: pointer;
+                        outline: none;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }

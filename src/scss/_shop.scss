@@ -1,0 +1,29 @@
+.shop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__banner {
+        min-height: 530px;
+        border-radius: 50px;
+        background: url('../img/shop-bg.jpg') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &-title {
+            padding-bottom: 48px;
+            color: $whiteColor;
+            &--yellow {
+                color: $yellowColor;
+            }
+        }
+        &-text {
+            max-width: 70%;
+            padding-bottom: 48px;
+            color: $whiteColor;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+}

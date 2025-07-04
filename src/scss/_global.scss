@@ -1,0 +1,93 @@
+    // Container
+    .container {
+        max-width: ($containerWidth + $containerPadding) + px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 $containerSidePadding + px;
+        @media (max-width: $breakpoint1450) {
+            max-width: 1200px;
+        }
+        @media (max-width: $breakpoint992) {
+            max-width: 970px;
+        }
+        @media (max-width: $breakpoint768) {
+            max-width: 740px;
+        }
+        @media (max-width: $breakpoint480) {
+            max-width: none;
+        }
+    }
+    
+    // Body & Locked
+    body {
+        font-family: $fontMain;
+        &.locked {
+            overflow: hidden;
+        }
+        // Dark mode styles
+        &.dark {
+            background: #242424;
+        }
+    }
+    
+    // Animations
+    // Fade
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .btn-primary {
+        display: inline-block;
+        color: $whiteColor;
+        background-color: $yellowColor;
+        padding: 20px 40px;
+        border-radius: 50px;
+        font-size: 20x;
+        font-weight: 600;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: $lightYellowColor;
+        }
+    }
+    
+    .header-m {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    .header-l {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    
+    .header-xl {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    
+    @media screen and (max-width: $breakpoint992) {
+        .header-xl {
+            font-size: 64px;
+        }
+        .header-l {
+            font-size: 48px;
+        }
+    }
+    
+    @media screen and (max-width: $breakpoint768) {
+        .header-xl {
+            font-size: 56px;
+            line-height: 1.1;
+        }
+        .header-l {
+            font-size: 32px;
+        }
+    }
