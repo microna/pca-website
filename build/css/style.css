@@ -146,6 +146,7 @@ body.dark {
 }
 
 .btn-primary {
+  text-align: center;
   display: inline-block;
   color: #FFFFFF;
   background-color: #FFB000;
@@ -278,7 +279,17 @@ b .menu__item-link:hover:after {
   z-index: 3;
 }
 
+.home {
+  margin-top: 40px;
+  background-image: url("../img/hero-main.png");
+  background-size: contain;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+
 .home .hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +300,10 @@ b .menu__item-link:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.home .hero__content {
+  max-width: 879px;
 }
 
 .home .hero__content-btn {
@@ -361,8 +376,14 @@ b .menu__item-link:hover:after {
 }
 
 .coaching {
+  padding-top: 100px;
+  padding-bottom: 100px;
   border-radius: 100px;
   background-color: #1F1F1F;
+  background-image: url("../img/coaching-image.png");
+  background-size: contain;
+  background-position: 17% 50%;
+  background-repeat: no-repeat;
   color: #FFFFFF;
 }
 
@@ -373,6 +394,10 @@ b .menu__item-link:hover:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -505,6 +530,10 @@ b .menu__item-link:hover:after {
 }
 
 .about {
+  background-image: url("../img/about-image.png");
+  background-size: contain;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
   border-radius: 100px;
   background-color: #1F1F1F;
   color: #FFFFFF;
@@ -520,6 +549,10 @@ b .menu__item-link:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .about__content {
@@ -1295,6 +1328,10 @@ footer .footer__exclaimer {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+
+  .home .hero__content {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1310,6 +1347,22 @@ footer .footer__exclaimer {
 
   .header-l {
     font-size: 48px;
+  }
+
+  .home {
+    background-size: auto;
+  }
+
+  .home .hero__advantages-item-text {
+    font-size: 16px;
+  }
+
+  .hero__image {
+    width: 50vh;
+  }
+
+  .coaching__advantages {
+    margin-left: 20px;
   }
 
   .coaching__wrapper {
@@ -1359,6 +1412,11 @@ footer .footer__exclaimer {
     font-size: 32px;
   }
 
+  .home {
+    background-size: auto;
+    background-position: 100% 50%;
+  }
+
   .home .hero__advantages-item-text {
     font-size: 16px;
   }
@@ -1366,10 +1424,92 @@ footer .footer__exclaimer {
   .hero__image {
     width: 50vh;
   }
+
+  .hero__advantages-content-text {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .hero__advantages-title {
+    padding-bottom: 5px;
+  }
+
+  .coaching {
+    background-size: 70%;
+    background-position: -19% 100%;
+  }
+
+  .coaching__advantages {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .header-xl {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .header-l {
+    font-size: 32px;
+  }
+
+  .home {
+    margin-top: 0;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .home .hero {
+    padding-bottom: 0;
+  }
+
+  .home .hero__advantages-item {
+    max-width: 65%;
+  }
+
+  .home {
+    background-size: 72%;
+    background-position: 145% 100%;
+  }
+
+  .home .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero__advantages-content {
+    width: 50%;
+  }
+
+  .home .hero__title {
+    max-width: 89%;
+  }
+
+  .coaching__content {
+    max-width: 100%;
+  }
+
+  .coaching {
+    background-size: 70%;
+    background-position: 120% 100%;
+  }
+
+  .coaching__advantages {
+    margin-left: 0px;
   }
 }

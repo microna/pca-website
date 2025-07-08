@@ -1,16 +1,26 @@
-            .home {
+            .home  {
+                margin-top: 40px;
+                background-image: url('../img/hero-main.png');
+                background-size: contain;
+                background-position: 90% 50%;
+                background-repeat: no-repeat;
+                // padding-bottom: 40px;
                 .hero {
+                    padding-top: 100px;
+                    padding-bottom: 100px;
                     padding-top: 70px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     &__content {
+                       max-width: 879px;
+
                         &-btn {
                             padding-top: 40px;
                         }
                     }
                     &__title {
-                        max-width: 100%;
+                    max-width: 100%;
                         padding-bottom: 40px;
                         &--yellow {
                             color: $yellowColor;
@@ -78,12 +88,15 @@
                 .home .hero {
                     align-items: flex-end;
                 }
-                .home {
-                    // padding-bottom: 40px;
+                .home .hero__content {
+                    max-width: 50%;
                 }
             }
-            
-            @media screen and (max-width: $breakpoint768) {
+
+            @media screen and (max-width: $breakpoint992) {
+                .home{
+                    background-size: auto;
+                }
                 .home .hero__advantages-item-text {
                     font-size: 16px;
                 }
@@ -92,13 +105,78 @@
                 }
             }
             
+            @media screen and (max-width: $breakpoint768) {
+                .home{
+                    background-size: auto;
+                    background-position: 100% 50%;
+                    
+                }
+                .home .hero__advantages-item-text {
+                    font-size: 16px;
+                }
+                .hero__image {
+                    width: 50vh;
+                }
+                .hero__advantages-content-text{
+                    display: inline-block;
+                    text-align: left;
+                }
+                .hero__advantages-title{
+                padding-bottom:5px;    
+                }
+            }
+
+
+            @media screen and (max-width: $breakpoint480) {
+                .home{
+                    margin-top: 0;
+                }
+                .hero{
+                    padding-top: 0;
+                }
+                .home .hero{
+                    // padding-top: 40px;
+                    padding-bottom: 0;
+                }
+                .home .hero__advantages-item{
+                    max-width: 65%;
+                }
+                .home {
+                    background-size: 72%;
+                    background-position: 145% 100%;
+                }
+            .home .hero__content {
+                max-width: 100%;
+            }
+            .hero__advantages{
+                flex-direction: column;
+            }
+            .hero__advantages-content{
+                width: 50%;
+            }
+            .home .hero__title {
+                max-width: 89%;
+            }
+        }
+            
             .coaching {
+                padding-top: 100px;
+                padding-bottom: 100px;
                 border-radius: 100px;
                 background-color: $darkGrey;
+                background-image: url('../img/coaching-image.png');
+                background-size: contain;
+                background-position: 17% 50%;
+                background-repeat: no-repeat;
+
                 color: $whiteColor;
+
                 &__wrapper {
                     display: flex;
                     justify-content: space-between;
+                    flex-direction: row-reverse;
+
+
                     align-items: center;
                 }
                 &__content {
@@ -190,6 +268,9 @@
             }
             
             @media screen and (max-width: $breakpoint992) {
+                .coaching__advantages{
+                    margin-left: 20px;
+                }
                 .coaching__wrapper {
                     align-items: flex-end
                 }
@@ -211,11 +292,36 @@
                 }
             }
             
-            @media screen and (max-width: $breakpoint768) {}
+            @media screen and (max-width: $breakpoint768) {
+                .coaching{
+                    background-size: 70%;
+                    background-position: -19% 100%;
+                }
+                .coaching__advantages{
+                    margin-left: 50px;
+                }
+               
+            }
             
-            @media screen and (max-width: $breakpoint480) {}
+            @media screen and (max-width: $breakpoint480) {
+                .coaching__content {
+                    max-width: 100%;
+                }
+                .coaching {
+                    background-size: 70%;
+                    background-position: 120% 100%;
+                }
+                .coaching__advantages{
+                    margin-left: 0px;
+                }
+            }
             
             .about {
+
+                background-image: url('../img/about-image.png');
+                background-size: contain;
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
                 border-radius: 100px;
                 background-color: $darkGrey;
                 color: $whiteColor;
@@ -223,6 +329,9 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    flex-direction: row-reverse
+
+
                 }
                 &__content {
                     max-width: 50%;
@@ -242,6 +351,9 @@
                         }
                     }
                 }
+            }
+            @media screen and (max-width: $breakpoint992) {
+               
             }
             
             .shop {
