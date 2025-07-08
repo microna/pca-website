@@ -67,3 +67,24 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: $breakpoint992) {
+    .footer .footer__bottom {
+        grid-template-columns: 1fr;
+        justify-items: start;
+    }
+    .footer .footer__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .footer__exclaimer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .footer__top-title {
+        padding-bottom: 24px;
+    }
+    .footer .footer__exclamation-text {
+        padding-bottom: 24px;
+    }
+}

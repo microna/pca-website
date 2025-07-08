@@ -144,3 +144,9 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint992) {
+    .logo {
+        padding-left: 10%;
+    }
+}

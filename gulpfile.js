@@ -14,14 +14,14 @@ let path = {
         css: source_folder + '/scss/style.scss',
         js: source_folder + '/js/scripts.js',
         img: source_folder + '/img/**/*.+(png|jpg|jpeg|ico|svg|webp)',
-        fonts: source_folder + '/fonts/*',
+        fonts: source_folder + '/fonts/**/*', // Changed from '/fonts/*'
     },
     watch: {
         html: source_folder + '/**/*.html',
         css: source_folder + ['/scss/**/*.scss'],
         js: source_folder + '/js/**/*.js',
         img: source_folder + '/img/**/*.+(png|jpg|jpeg|ico|svg|webp)',
-        fonts: source_folder + '/fonts/*',
+        fonts: source_folder + '/fonts/**/*', // Changed from '/fonts/*'
     },
     clean: './' + project_folder + '/',
 }

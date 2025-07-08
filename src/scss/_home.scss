@@ -1,4 +1,4 @@
-            .home  {
+            .home {
                 margin-top: 40px;
                 background-image: url('../img/hero-main.png');
                 background-size: contain;
@@ -13,14 +13,13 @@
                     justify-content: space-between;
                     align-items: center;
                     &__content {
-                       max-width: 879px;
-
+                        max-width: 879px;
                         &-btn {
                             padding-top: 40px;
                         }
                     }
                     &__title {
-                    max-width: 100%;
+                        max-width: 100%;
                         padding-bottom: 40px;
                         &--yellow {
                             color: $yellowColor;
@@ -92,9 +91,9 @@
                     max-width: 50%;
                 }
             }
-
+            
             @media screen and (max-width: $breakpoint992) {
-                .home{
+                .home {
                     background-size: auto;
                 }
                 .home .hero__advantages-item-text {
@@ -106,10 +105,9 @@
             }
             
             @media screen and (max-width: $breakpoint768) {
-                .home{
+                .home {
                     background-size: auto;
                     background-position: 100% 50%;
-                    
                 }
                 .home .hero__advantages-item-text {
                     font-size: 16px;
@@ -117,47 +115,46 @@
                 .hero__image {
                     width: 50vh;
                 }
-                .hero__advantages-content-text{
+                .hero__advantages-content-text {
                     display: inline-block;
                     text-align: left;
                 }
-                .hero__advantages-title{
-                padding-bottom:5px;    
+                .hero__advantages-title {
+                    padding-bottom: 5px;
                 }
             }
-
-
+            
             @media screen and (max-width: $breakpoint480) {
-                .home{
+                .home {
                     margin-top: 0;
                 }
-                .hero{
+                .hero {
                     padding-top: 0;
                 }
-                .home .hero{
+                .home .hero {
                     // padding-top: 40px;
                     padding-bottom: 0;
                 }
-                .home .hero__advantages-item{
+                .home .hero__advantages-item {
                     max-width: 65%;
                 }
                 .home {
                     background-size: 72%;
                     background-position: 145% 100%;
                 }
-            .home .hero__content {
-                max-width: 100%;
+                .home .hero__content {
+                    max-width: 100%;
+                }
+                .hero__advantages {
+                    flex-direction: column;
+                }
+                .hero__advantages-content {
+                    width: 50%;
+                }
+                .home .hero__title {
+                    max-width: 89%;
+                }
             }
-            .hero__advantages{
-                flex-direction: column;
-            }
-            .hero__advantages-content{
-                width: 50%;
-            }
-            .home .hero__title {
-                max-width: 89%;
-            }
-        }
             
             .coaching {
                 padding-top: 100px;
@@ -168,15 +165,11 @@
                 background-size: contain;
                 background-position: 17% 50%;
                 background-repeat: no-repeat;
-
                 color: $whiteColor;
-
                 &__wrapper {
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row-reverse;
-
-
                     align-items: center;
                 }
                 &__content {
@@ -213,6 +206,7 @@
             }
             
             .services {
+                padding-bottom: 50px;
                 padding-top: 100px;
                 &__content {
                     display: flex;
@@ -268,7 +262,7 @@
             }
             
             @media screen and (max-width: $breakpoint992) {
-                .coaching__advantages{
+                .coaching__advantages {
                     margin-left: 20px;
                 }
                 .coaching__wrapper {
@@ -293,14 +287,13 @@
             }
             
             @media screen and (max-width: $breakpoint768) {
-                .coaching{
+                .coaching {
                     background-size: 70%;
                     background-position: -19% 100%;
                 }
-                .coaching__advantages{
+                .coaching__advantages {
                     margin-left: 50px;
                 }
-               
             }
             
             @media screen and (max-width: $breakpoint480) {
@@ -311,16 +304,17 @@
                     background-size: 70%;
                     background-position: 120% 100%;
                 }
-                .coaching__advantages{
+                .coaching__advantages {
                     margin-left: 0px;
                 }
             }
             
             .about {
-
+                padding-top: 100px;
+                padding-bottom: 100px;
                 background-image: url('../img/about-image.png');
                 background-size: contain;
-                background-position: 0% 100%;
+                background-position: 15% 100%;
                 background-repeat: no-repeat;
                 border-radius: 100px;
                 background-color: $darkGrey;
@@ -330,8 +324,6 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: row-reverse
-
-
                 }
                 &__content {
                     max-width: 50%;
@@ -352,8 +344,21 @@
                     }
                 }
             }
+            
             @media screen and (max-width: $breakpoint992) {
-               
+                .about {
+                    background-position: 0% 100%;
+                    background-size: 50%;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {
+                .about__content {
+                    max-width: 100%;
+                }
+                .about {
+                    background-image: none;
+                }
             }
             
             .shop {
@@ -375,6 +380,10 @@
                     align-items: center;
                     gap: 24px;
                     padding-top: 48px;
+                    padding-bottom: 100px;
+                }
+                &__item {
+                    width: 446.667px;
                 }
                 &__image {
                     min-width: 416px;
@@ -397,7 +406,7 @@
                         right: -7px;
                     }
                     &-btn {
-                        transform: translate(305px, 315px);
+                        transform: translate(335px, 315px);
                         z-index: 99;
                         border-radius: 50%;
                         border: none;
@@ -482,16 +491,32 @@
                     align-items: center;
                     gap: 24px;
                     padding-top: 48px;
+                    margin-bottom: 50px;
                 }
                 &__item {
                     min-width: 33%;
                     color: $whiteColor;
-                    background-image: url('../img/testimonials-item-bg.jpg');
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
+                    background: rgba(255, 255, 255, 0.1); // Semi-transparent white
+                    backdrop-filter: blur(10px); // Glass blur effect
+                    -webkit-backdrop-filter: blur(10px); // Safari support
+                    border: 1px solid rgba(255, 255, 255, 0.2); // Subtle border
                     border-radius: 20px;
                     padding: 24px;
+                    position: relative;
+                    overflow: hidden;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-image: url('../img/quotegreay.svg');
+                        width: 120px;
+                        height: 120px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        top: 20px;
+                        right: 20px;
+                    }
                     &-content {
                         display: flex;
                         align-items: center;
@@ -613,7 +638,7 @@
                         right: -7px;
                     }
                     &-btn {
-                        transform: translate(338px, 313px);
+                        transform: translate(333px, 313px);
                         z-index: 99;
                         border-radius: 50%;
                         border: none;

@@ -163,6 +163,11 @@ body.dark {
   background-color: #FFC84D;
 }
 
+.shop__image-btn:hover,
+.blog__image-btn:hover {
+  background-color: #6B8F71;
+}
+
 .header-m {
   font-size: 36px;
   font-weight: 500;
@@ -179,6 +184,25 @@ body.dark {
   font-size: 75px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFB000;
+  width: 40px !important;
+  border-radius: 20px;
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.swiper-wrapper {
+  padding-bottom: 20px;
 }
 
 .header {
@@ -448,6 +472,7 @@ b .menu__item-link:hover:after {
 }
 
 .services {
+  padding-bottom: 50px;
   padding-top: 100px;
 }
 
@@ -530,9 +555,11 @@ b .menu__item-link:hover:after {
 }
 
 .about {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-image: url("../img/about-image.png");
   background-size: contain;
-  background-position: 0% 100%;
+  background-position: 15% 100%;
   background-repeat: no-repeat;
   border-radius: 100px;
   background-color: #1F1F1F;
@@ -611,6 +638,11 @@ b .menu__item-link:hover:after {
           align-items: center;
   gap: 24px;
   padding-top: 48px;
+  padding-bottom: 100px;
+}
+
+.shop__item {
+  width: 446.667px;
 }
 
 .shop__image {
@@ -637,9 +669,9 @@ b .menu__item-link:hover:after {
 }
 
 .shop__image-btn {
-  -webkit-transform: translate(305px, 315px);
-      -ms-transform: translate(305px, 315px);
-          transform: translate(305px, 315px);
+  -webkit-transform: translate(335px, 315px);
+      -ms-transform: translate(335px, 315px);
+          transform: translate(335px, 315px);
   z-index: 99;
   border-radius: 50%;
   border: none;
@@ -754,17 +786,34 @@ b .menu__item-link:hover:after {
           align-items: center;
   gap: 24px;
   padding-top: 48px;
+  margin-bottom: 50px;
 }
 
 .testimonials__item {
   min-width: 33%;
   color: #FFFFFF;
-  background-image: url("../img/testimonials-item-bg.jpg");
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials__item::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/quotegreay.svg");
+  width: 120px;
+  height: 120px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 24px;
+  top: 20px;
+  right: 20px;
 }
 
 .testimonials__item-content {
@@ -922,9 +971,9 @@ b .menu__item-link:hover:after {
 }
 
 .blog__image-btn {
-  -webkit-transform: translate(338px, 313px);
-      -ms-transform: translate(338px, 313px);
-          transform: translate(338px, 313px);
+  -webkit-transform: translate(333px, 313px);
+      -ms-transform: translate(333px, 313px);
+          transform: translate(333px, 313px);
   z-index: 99;
   border-radius: 50%;
   border: none;
@@ -1349,6 +1398,10 @@ footer .footer__exclaimer {
     font-size: 48px;
   }
 
+  .logo {
+    padding-left: 10%;
+  }
+
   .home {
     background-size: auto;
   }
@@ -1393,6 +1446,44 @@ footer .footer__exclaimer {
 
   .coaching__content-text {
     padding-bottom: 25px;
+  }
+
+  .about {
+    background-position: 0% 100%;
+    background-size: 50%;
+  }
+
+  .footer .footer__bottom {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .footer .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer .footer__exclaimer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer .footer__top-title {
+    padding-bottom: 24px;
+  }
+
+  .footer .footer__exclamation-text {
+    padding-bottom: 24px;
   }
 }
 
@@ -1441,6 +1532,14 @@ footer .footer__exclaimer {
 
   .coaching__advantages {
     margin-left: 50px;
+  }
+
+  .about__content {
+    max-width: 100%;
+  }
+
+  .about {
+    background-image: none;
   }
 }
 
