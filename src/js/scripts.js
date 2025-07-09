@@ -29,7 +29,8 @@ burgerMenu()
 
 // Shop Swiper
 const shopSwiper = new Swiper('.shop .swiper', {
-    loop: true, // Add this for infinite loop
+    loop: true,
+    centeredSlides: false,
     pagination: {
         el: '.shop .swiper-pagination',
         clickable: true,
@@ -42,7 +43,11 @@ const shopSwiper = new Swiper('.shop .swiper', {
         el: '.shop .swiper-scrollbar',
     },
     breakpoints: {
-        786: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        768: {
             slidesPerView: 1,
             spaceBetween: 20
         },
@@ -50,9 +55,13 @@ const shopSwiper = new Swiper('.shop .swiper', {
             slidesPerView: 2,
             spaceBetween: 30
         },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
         1440: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 50
         }
     }
 });
@@ -110,16 +119,21 @@ const blogSwiper = new Swiper('.blog .swiper', {
             slidesPerView: 2,
             spaceBetween: 30
         },
-        1450: {
+        1440: {
             slidesPerView: 3,
-            spaceBetween: 20
+            spaceBetween: 40
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 50
         }
     }
 });
 
-// Blog Swiper
+// Services Swiper
 const servicewiper = new Swiper('.services .swiper', {
-    loop: true, // Add this for infinite loop
+    loop: true,
+    centeredSlides: false,
     autoplay: {
         delay: 3000, // 3 seconds
         disableOnInteraction: false, // Continue autoplay after user interaction
@@ -137,7 +151,11 @@ const servicewiper = new Swiper('.services .swiper', {
         el: '.services .swiper-scrollbar',
     },
     breakpoints: {
-        786: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        768: {
             slidesPerView: 1,
             spaceBetween: 20
         },
@@ -145,9 +163,13 @@ const servicewiper = new Swiper('.services .swiper', {
             slidesPerView: 2,
             spaceBetween: 30
         },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
         1440: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 50
         }
     }
 });
