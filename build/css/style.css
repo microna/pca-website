@@ -502,7 +502,6 @@ b .menu__item-link:hover:after {
   width: 100% !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  max-width: 416px;
   height: 415px;
   background-image: url("../img/service-image.jpg");
   background-size: cover;
@@ -566,7 +565,7 @@ b .menu__item-link:hover:after {
 }
 
 .services__item.swiper-slide {
-  width: 33% !important;
+  width: calc(33.333% - 20px) !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -653,7 +652,6 @@ b .menu__item-link:hover:after {
   width: 100% !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  max-width: 416px;
 }
 
 .shop__image {
@@ -774,13 +772,9 @@ b .menu__item-link:hover:after {
 }
 
 .shop__item.swiper-slide {
-  width: auto !important;
+  width: calc(33.333% - 20px) !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.shop__item.swiper-slide {
-  width: 33% !important;
 }
 
 .testimonials {
@@ -808,22 +802,15 @@ b .menu__item-link:hover:after {
 }
 
 .testimonials__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 24px;
   padding-top: 48px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .testimonials__item {
-  min-width: 33%;
+  width: 100% !important;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -833,7 +820,6 @@ b .menu__item-link:hover:after {
   padding: 24px;
   position: relative;
   overflow: hidden;
-  position: relative;
 }
 
 .testimonials__item::after {
@@ -890,6 +876,16 @@ b .menu__item-link:hover:after {
   margin-top: 16px;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.testimonials__wrapper > .swiper-wrapper {
+  padding-bottom: 100px;
+}
+
+.testimonials__item.swiper-slide {
+  width: calc(33.333% - 20px) !important;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .blog {
@@ -1019,7 +1015,9 @@ b .menu__item-link:hover:after {
 }
 
 .blog__item.swiper-slide {
-  width: 31.5% !important;
+  width: calc(33.333% - 20px) !important;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .shop {
@@ -1285,16 +1283,6 @@ footer .footer__exclaimer {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1200px) {
-  .services__item {
-    max-width: calc(33.333% - 40px);
-  }
-
-  .shop__item {
-    max-width: calc(33.333% - 40px);
-  }
-}
-
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -1459,6 +1447,12 @@ footer .footer__exclaimer {
     width: 50vh;
   }
 
+  .services__item.swiper-slide {
+    width: calc(50% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
   .services__item {
     height: 490px;
   }
@@ -1514,12 +1508,22 @@ footer .footer__exclaimer {
     background-size: 50%;
   }
 
-  .shop__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 24px;
+  .shop__item.swiper-slide {
+    width: calc(50% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .testimonials__item.swiper-slide {
+    width: calc(50% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .blog__item.swiper-slide {
+    width: calc(50% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 
   .blog__content {
@@ -1561,16 +1565,6 @@ footer .footer__exclaimer {
 
   .footer .footer__exclamation-text {
     padding-bottom: 24px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .services__item {
-    max-width: 100%;
-  }
-
-  .shop__item {
-    max-width: 100%;
   }
 }
 
@@ -1623,6 +1617,12 @@ footer .footer__exclaimer {
     max-width: 100%;
   }
 
+  .services__item.swiper-slide {
+    width: calc(100% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
   .services__item {
     height: 400px;
     padding: 30px;
@@ -1651,6 +1651,24 @@ footer .footer__exclaimer {
 
   .about {
     background-image: none;
+  }
+
+  .shop__item.swiper-slide {
+    width: calc(100% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .testimonials__item.swiper-slide {
+    width: calc(100% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .blog__item.swiper-slide {
+    width: calc(100% - 20px) !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 }
 
@@ -1727,15 +1745,5 @@ footer .footer__exclaimer {
 
   .coaching__advantages {
     margin-left: 0px;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .services__item {
-    max-width: calc(50% - 30px);
-  }
-
-  .shop__item {
-    max-width: calc(50% - 30px);
   }
 }

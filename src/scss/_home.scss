@@ -229,7 +229,6 @@
                 &__item {
                     width: 100% !important;
                     flex-shrink: 0;
-                    max-width: 416px;
                     height: 415px;
                     background-image: url('../img/service-image.jpg');
                     background-size: cover;
@@ -284,31 +283,27 @@
                 }
             }
             
-            // Responsive services slider items
+            // Services slider items - 3 per view
             .services__item.swiper-slide {
-                width: 33% !important;
+                width: calc(33.333% - 20px) !important;
                 flex-shrink: 0;
             }
             
-            // Responsive adjustments for services
-            @media screen and (min-width: 1200px) {
-                .services__item {
-                    max-width: calc(33.333% - 40px);
+            @media screen and (max-width: $breakpoint992) {
+                .services__item.swiper-slide {
+                    width: calc(50% - 20px) !important;
+                    flex-shrink: 0;
                 }
             }
             
-            @media screen and (min-width: 992px) and (max-width: 1199px) {
-                .services__item {
-                    max-width: calc(50% - 30px);
+            @media screen and (max-width: $breakpoint768) {
+                .services__item.swiper-slide {
+                    width: calc(100% - 20px) !important;
+                    flex-shrink: 0;
                 }
             }
             
-            @media screen and (max-width: 991px) {
-                .services__item {
-                    max-width: 100%;
-                }
-            }
-            
+            // Let Swiper handle the responsive sizing
             @media screen and (max-width: $breakpoint992) {
                 .services__item {
                     height: 490px;
@@ -469,7 +464,6 @@
                 &__item {
                     width: 100% !important;
                     flex-shrink: 0;
-                    max-width: 416px;
                 }
                 &__image {
                     width: 100%;
@@ -559,39 +553,23 @@
                 }
             }
             
-            // Responsive shop slider items
+            // Shop slider items - 3 per view
             .shop__item.swiper-slide {
-                width: auto !important;
+                width: calc(33.333% - 20px) !important;
                 flex-shrink: 0;
             }
             
-            .shop__item.swiper-slide {
-                width: 33% !important;
-            }
-            
-            // Responsive adjustments for shop
-            @media screen and (min-width: 1200px) {
-                .shop__item {
-                    max-width: calc(33.333% - 40px);
-                }
-            }
-            
-            @media screen and (min-width: 992px) and (max-width: 1199px) {
-                .shop__item {
-                    max-width: calc(50% - 30px);
-                }
-            }
-            
-            @media screen and (max-width: 991px) {
-                .shop__item {
-                    max-width: 100%;
-                }
-            }
-            
             @media screen and (max-width: $breakpoint992) {
-                .shop__content {
-                    flex-direction: column;
-                    gap: 24px;
+                .shop__item.swiper-slide {
+                    width: calc(50% - 20px) !important;
+                    flex-shrink: 0;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {
+                .shop__item.swiper-slide {
+                    width: calc(100% - 20px) !important;
+                    flex-shrink: 0;
                 }
             }
             
@@ -615,15 +593,13 @@
                     }
                 }
                 &__wrapper {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 24px;
                     padding-top: 48px;
                     margin-bottom: 50px;
+                    overflow: hidden;
                 }
                 &__item {
-                    min-width: 33%;
+                    width: 100% !important;
+                    flex-shrink: 0;
                     color: $whiteColor;
                     background: rgba(255, 255, 255, 0.1); // Semi-transparent white
                     backdrop-filter: blur(10px); // Glass blur effect
@@ -633,7 +609,6 @@
                     padding: 24px;
                     position: relative;
                     overflow: hidden;
-                    position: relative;
                     &::after {
                         content: "";
                         position: absolute;
@@ -678,6 +653,31 @@
                 }
             }
             
+            .testimonials__wrapper>.swiper-wrapper {
+                padding-bottom: 100px;
+            }
+            
+            // Testimonials slider items - 3 per view
+            .testimonials__item.swiper-slide {
+                width: calc(33.333% - 20px) !important;
+                flex-shrink: 0;
+            }
+            
+            @media screen and (max-width: $breakpoint992) {
+                .testimonials__item.swiper-slide {
+                    width: calc(50% - 20px) !important;
+                    flex-shrink: 0;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {
+                .testimonials__item.swiper-slide {
+                    width: calc(100% - 20px) !important;
+                    flex-shrink: 0;
+                }
+            }
+            
+            // Let Swiper handle the responsive sizing
             .blog {
                 padding-bottom: 100px;
                 padding-top: 100px;
@@ -783,8 +783,24 @@
                 }
             }
             
+            // Blog slider items - 3 per view
             .blog__item.swiper-slide {
-                width: 31.5% !important;
+                width: calc(33.333% - 20px) !important;
+                flex-shrink: 0;
+            }
+            
+            @media screen and (max-width: $breakpoint992) {
+                .blog__item.swiper-slide {
+                    width: calc(50% - 20px) !important;
+                    flex-shrink: 0;
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint768) {
+                .blog__item.swiper-slide {
+                    width: calc(100% - 20px) !important;
+                    flex-shrink: 0;
+                }
             }
             
             @media screen and (max-width: $breakpoint992) {

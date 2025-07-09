@@ -31,6 +31,8 @@ burgerMenu()
 const shopSwiper = new Swiper('.shop .swiper', {
     loop: true,
     centeredSlides: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
     pagination: {
         el: '.shop .swiper-pagination',
         clickable: true,
@@ -41,34 +43,15 @@ const shopSwiper = new Swiper('.shop .swiper', {
     },
     scrollbar: {
         el: '.shop .swiper-scrollbar',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        992: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 40
-        },
-        1440: {
-            slidesPerView: 3,
-            spaceBetween: 50
-        }
     }
 });
 
 // Testimonials Swiper
 const testimonialsSwiper = new Swiper('.testimonials .swiper', {
-    loop: true, // Add this for infinite loop
+    loop: true,
+    centeredSlides: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
     pagination: {
         el: '.testimonials .swiper-pagination',
         clickable: true,
@@ -79,26 +62,15 @@ const testimonialsSwiper = new Swiper('.testimonials .swiper', {
     },
     scrollbar: {
         el: '.testimonials .swiper-scrollbar',
-    },
-    breakpoints: {
-        786: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        992: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1440: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        }
     }
 });
 
 // Blog Swiper
 const blogSwiper = new Swiper('.blog .swiper', {
-    loop: true, // Add this for infinite loop
+    loop: true,
+    centeredSlides: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
     pagination: {
         el: '.blog .swiper-pagination',
         clickable: true,
@@ -109,24 +81,6 @@ const blogSwiper = new Swiper('.blog .swiper', {
     },
     scrollbar: {
         el: '.blog .swiper-scrollbar',
-    },
-    breakpoints: {
-        786: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        992: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1440: {
-            slidesPerView: 3,
-            spaceBetween: 40
-        },
-        1920: {
-            slidesPerView: 3,
-            spaceBetween: 50
-        }
     }
 });
 
@@ -134,6 +88,8 @@ const blogSwiper = new Swiper('.blog .swiper', {
 const servicewiper = new Swiper('.services .swiper', {
     loop: true,
     centeredSlides: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
     autoplay: {
         delay: 3000, // 3 seconds
         disableOnInteraction: false, // Continue autoplay after user interaction
@@ -149,27 +105,5 @@ const servicewiper = new Swiper('.services .swiper', {
     },
     scrollbar: {
         el: '.services .swiper-scrollbar',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        992: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 40
-        },
-        1440: {
-            slidesPerView: 3,
-            spaceBetween: 50
-        }
     }
 });
