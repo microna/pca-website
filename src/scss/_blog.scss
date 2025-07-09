@@ -1,6 +1,19 @@
 .blog {
     padding-top: 100px;
     padding-bottom: 100px;
+    &__content {
+        &-title {
+            text-align: center;
+            padding-bottom: 48px;
+        }
+        &-text {
+            max-width: 80%;
+            padding-bottom: 48px;
+            color: $whiteColor;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
     &__banner {
         color: $whiteColor;
         background-image: url('../img/blog-page-bg.jpg');
@@ -15,17 +28,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        &-title {
-            text-align: center;
-            padding-bottom: 48px;
-        }
-        &-text {
-            max-width: 80%;
-            padding-bottom: 48px;
-            color: $whiteColor;
-            font-size: 20px;
-            line-height: 1.5;
-        }
     }
     &__tagbar {
         padding-top: 48px;
@@ -36,10 +38,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
         }
         &-item {
-            padding: 11px 40px;
+            // padding: 11px 40px;
             background-color: $deepGreenColor;
             color: $whiteColor;
         }
@@ -63,7 +65,7 @@
         gap: 24px;
     }
     &__item {
-        width: 32%;
+        width: 31.9%;
         padding-bottom: 48px;
     }
 }
