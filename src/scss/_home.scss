@@ -2,7 +2,7 @@
                 margin-top: 40px;
                 background-image: url('../img/hero-main.png');
                 background-size: contain;
-                background-position: 90% 50%;
+                background-position: 90% 100%;
                 background-repeat: no-repeat;
                 // padding-bottom: 40px;
                 .hero {
@@ -107,7 +107,7 @@
             @media screen and (max-width: $breakpoint768) {
                 .home {
                     background-size: auto;
-                    background-position: 100% 50%;
+                    background-position: 100% 100%;
                 }
                 .home .hero__advantages-item-text {
                     font-size: 16px;
@@ -122,6 +122,12 @@
                 .hero__advantages-title {
                     padding-bottom: 5px;
                 }
+                .hero__advantages {
+                    flex-direction: column;
+                }
+                .home .hero__advantages-item {
+                    max-width: 100%;
+                }
             }
             
             @media screen and (max-width: $breakpoint480) {
@@ -133,7 +139,7 @@
                 }
                 .home .hero {
                     // padding-top: 40px;
-                    padding-bottom: 0;
+                    padding-bottom: 25px;
                 }
                 .home .hero__advantages-item {
                     max-width: 65%;
@@ -144,9 +150,6 @@
                 }
                 .home .hero__content {
                     max-width: 100%;
-                }
-                .hero__advantages {
-                    flex-direction: column;
                 }
                 .hero__advantages-content {
                     width: 50%;
@@ -258,6 +261,16 @@
                             line-height: 1.5;
                         }
                     }
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint992) {
+                .services__wrapper .services__item {
+                    min-height: 490px;
+                }
+                .services__content {
+                    flex-direction: column;
+                    gap: 24px;
                 }
             }
             
@@ -466,6 +479,13 @@
                 }
             }
             
+            @media screen and (max-width: $breakpoint992) {
+                .shop__content {
+                    flex-direction: column;
+                    gap: 24px;
+                }
+            }
+            
             .testimonials {
                 background-image: url('../img/testimonials.jpg');
                 background-size: cover;
@@ -570,6 +590,7 @@
                     padding-top: 48px;
                 }
                 &__item {
+                    width: 32% !important;
                     &-info-tags {
                         margin-top: 24px;
                         &-item {
@@ -638,7 +659,7 @@
                         right: -7px;
                     }
                     &-btn {
-                        transform: translate(333px, 313px);
+                        transform: translate(450px, 313px);
                         z-index: 99;
                         border-radius: 50%;
                         border: none;
@@ -650,5 +671,29 @@
                         outline: none;
                         transition: all 0.3s ease;
                     }
+                }
+            }
+            
+            @media screen and (max-width: $breakpoint992) {
+                .blog__content {
+                    flex-direction: column;
+                    gap: 24px;
+                }
+                .blog__image-btn {
+                    transform: translate(344px, 313px);
+                }
+            }
+            
+            .blog__item {
+                width: 40% !important;
+            }
+            
+            .blog__image-btn {
+                transform: translate(448px, 313px);
+            }
+            
+            @media screen and (max-width: 1450px) {
+                .blog__image-btn {
+                    transform: translate(352px, 313px);
                 }
             }

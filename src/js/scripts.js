@@ -29,6 +29,7 @@ burgerMenu()
 
 // Shop Swiper
 const shopSwiper = new Swiper('.shop .swiper', {
+    loop: true, // Add this for infinite loop
     pagination: {
         el: '.shop .swiper-pagination',
         clickable: true,
@@ -41,11 +42,11 @@ const shopSwiper = new Swiper('.shop .swiper', {
         el: '.shop .swiper-scrollbar',
     },
     breakpoints: {
-        320: {
+        786: {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        768: {
+        992: {
             slidesPerView: 2,
             spaceBetween: 30
         },
@@ -58,6 +59,7 @@ const shopSwiper = new Swiper('.shop .swiper', {
 
 // Testimonials Swiper
 const testimonialsSwiper = new Swiper('.testimonials .swiper', {
+    loop: true, // Add this for infinite loop
     pagination: {
         el: '.testimonials .swiper-pagination',
         clickable: true,
@@ -70,11 +72,11 @@ const testimonialsSwiper = new Swiper('.testimonials .swiper', {
         el: '.testimonials .swiper-scrollbar',
     },
     breakpoints: {
-        320: {
+        786: {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        768: {
+        992: {
             slidesPerView: 2,
             spaceBetween: 30
         },
@@ -87,6 +89,7 @@ const testimonialsSwiper = new Swiper('.testimonials .swiper', {
 
 // Blog Swiper
 const blogSwiper = new Swiper('.blog .swiper', {
+    loop: true, // Add this for infinite loop
     pagination: {
         el: '.blog .swiper-pagination',
         clickable: true,
@@ -99,23 +102,29 @@ const blogSwiper = new Swiper('.blog .swiper', {
         el: '.blog .swiper-scrollbar',
     },
     breakpoints: {
-        320: {
+        786: {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        768: {
+        992: {
             slidesPerView: 2,
             spaceBetween: 30
         },
-        1440: {
+        1450: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 20
         }
     }
 });
 
 // Blog Swiper
 const servicewiper = new Swiper('.services .swiper', {
+    loop: true, // Add this for infinite loop
+    autoplay: {
+        delay: 3000, // 3 seconds
+        disableOnInteraction: false, // Continue autoplay after user interaction
+        pauseOnMouseEnter: true, // Pause on mouse hover
+    },
     pagination: {
         el: '.services .swiper-pagination',
         clickable: true,
@@ -128,16 +137,16 @@ const servicewiper = new Swiper('.services .swiper', {
         el: '.services .swiper-scrollbar',
     },
     breakpoints: {
-        320: {
+        786: {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        768: {
+        992: {
             slidesPerView: 2,
             spaceBetween: 30
         },
         1440: {
-            slidesPerView: 3.2,
+            slidesPerView: 3,
             spaceBetween: 30
         }
     }

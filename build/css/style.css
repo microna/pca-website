@@ -307,7 +307,7 @@ b .menu__item-link:hover:after {
   margin-top: 40px;
   background-image: url("../img/hero-main.png");
   background-size: contain;
-  background-position: 90% 50%;
+  background-position: 90% 100%;
   background-repeat: no-repeat;
 }
 
@@ -894,6 +894,10 @@ b .menu__item-link:hover:after {
   padding-top: 48px;
 }
 
+.blog__item {
+  width: 32% !important;
+}
+
 .blog__item-info-tags {
   margin-top: 24px;
 }
@@ -971,9 +975,9 @@ b .menu__item-link:hover:after {
 }
 
 .blog__image-btn {
-  -webkit-transform: translate(333px, 313px);
-      -ms-transform: translate(333px, 313px);
-          transform: translate(333px, 313px);
+  -webkit-transform: translate(450px, 313px);
+      -ms-transform: translate(450px, 313px);
+          transform: translate(450px, 313px);
   z-index: 99;
   border-radius: 50%;
   border: none;
@@ -986,6 +990,16 @@ b .menu__item-link:hover:after {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.blog__item {
+  width: 40% !important;
+}
+
+.blog__image-btn {
+  -webkit-transform: translate(448px, 313px);
+      -ms-transform: translate(448px, 313px);
+          transform: translate(448px, 313px);
 }
 
 .shop {
@@ -1171,6 +1185,7 @@ b .menu__item-link:hover:after {
 }
 
 footer {
+  padding-top: 50px;
   display: block;
   background-color: #1F1F1F;
 }
@@ -1248,6 +1263,14 @@ footer .footer__exclaimer {
       -ms-flex-align: center;
           align-items: center;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1450px) {
+  .blog__image-btn {
+    -webkit-transform: translate(352px, 313px);
+        -ms-transform: translate(352px, 313px);
+            transform: translate(352px, 313px);
+  }
 }
 
 @media (max-width: 1449.98px) {
@@ -1414,6 +1437,18 @@ footer .footer__exclaimer {
     width: 50vh;
   }
 
+  .services__wrapper .services__item {
+    min-height: 490px;
+  }
+
+  .services__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+
   .coaching__advantages {
     margin-left: 20px;
   }
@@ -1451,6 +1486,28 @@ footer .footer__exclaimer {
   .about {
     background-position: 0% 100%;
     background-size: 50%;
+  }
+
+  .shop__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+
+  .blog__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+
+  .blog__image-btn {
+    -webkit-transform: translate(344px, 313px);
+        -ms-transform: translate(344px, 313px);
+            transform: translate(344px, 313px);
   }
 
   .footer .footer__bottom {
@@ -1505,7 +1562,7 @@ footer .footer__exclaimer {
 
   .home {
     background-size: auto;
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
 
   .home .hero__advantages-item-text {
@@ -1523,6 +1580,17 @@ footer .footer__exclaimer {
 
   .hero__advantages-title {
     padding-bottom: 5px;
+  }
+
+  .hero__advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .home .hero__advantages-item {
+    max-width: 100%;
   }
 
   .coaching {
@@ -1568,7 +1636,7 @@ footer .footer__exclaimer {
   }
 
   .home .hero {
-    padding-bottom: 0;
+    padding-bottom: 25px;
   }
 
   .home .hero__advantages-item {
@@ -1582,13 +1650,6 @@ footer .footer__exclaimer {
 
   .home .hero__content {
     max-width: 100%;
-  }
-
-  .hero__advantages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .hero__advantages-content {
