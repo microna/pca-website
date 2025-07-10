@@ -1,0 +1,852 @@
+<?php
+get_header();
+?>
+<main>
+<section class="home">
+    <div class="container">
+        <div class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title header-xl">
+                    Unlock Your Full Potential - <span class="hero__title--yellow">On and Off the Field</span>
+                </h1>
+                <div class="hero__advantages">
+                    <div class="hero__advantages-item">
+                        <p class="hero__advantages-item-text">
+                            Guiding athletes with real-world experience, holistic coaching and evidence-based performance strategies.
+                        </p>
+                    </div>
+
+
+                    <div class="hero__advantages-content">
+                        <div class="hero__advantages-content-stars">
+                            <img src="../img/stars.svg" alt="star">
+                        </div>
+                        <h3 class="hero__advantages-title header-l">
+                            3 Years
+                        </h3>
+                        <p class="hero__advantages-content-text">Experince</p>
+                    </div>
+                </div>
+                <div class="hero__content-btn">
+                    <a href="#" class="btn-primary">
+                        Start Your Journey
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+</section>
+
+
+
+<section class="coaching">
+    <div class="container">
+        <div class="coaching__wrapper">
+
+            <div class="coaching__content">
+                <h2 class="coaching__title header-l">
+                    <span class="coaching__title--yellow">Coaching </span>for Young Athletes
+                </h2>
+                <div class="coaching__content-text">
+                    <p>
+                        As a professional cricketer with coaching experience in both England and Australia, I offer tailored one-on-one and group cricket coaching designed to elevate your game and mentoring applicable to all sports from entry levels all the way to the top. My
+                        approach goes beyond just technique—blending skill development with mental resilience, game awareness, and performance strategy.</p>
+                    <p>
+                        Whether you're just starting your journey or training for elite-level competition, I’m here to guide you—every step of the way.
+                    </p>
+                </div>
+                <div class="coaching__advantages">
+                    <div class="coaching__advantages-item">
+                        <h3 class="coaching__advantages-title header-m">
+                            45+
+                        </h3>
+                        <p class="coaching__advantages-text">Athletes Trained</p>
+                    </div>
+                    <div class="coaching__advantages-item">
+                        <h3 class="coaching__advantages-title header-m">
+                            25+
+                        </h3>
+                        <p class="coaching__advantages-text">Competition-ready athletes</p>
+                    </div>
+                </div>
+                <div class="coaching__content-btn">
+                    <a href="#" class="btn-primary">
+                        Book Your Session
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="services">
+    <div class="container">
+        <div class="services__content">
+            <h2 class="services__content-title header-l">
+                Coaching
+                <span class="services__content-title--yellow">Services</span>
+            </h2>
+            <div class="services__btn">
+                <a href="#" class="btn-primary">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+        <div class="services__wrapper swiper">
+            <div class="swiper-wrapper">
+                <div class="services__item swiper-slide">
+                    <div class="services__item-content">
+                        <h4 class="services__item-title header-l">
+                            <span class="services__item-title--yellow">Club</span> Cricket Coach
+                        </h4>
+                        <p class="services__item-text">
+                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
+                        </p>
+                    </div>
+                </div>
+                <div class="services__item swiper-slide">
+                    <div class="services__item-content">
+                        <h4 class="services__item-title header-l">
+                            <span class="services__item-title--yellow">Club</span> Cricket Coach
+                        </h4>
+                        <p class="services__item-text">
+                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="services__item swiper-slide">
+                    <div class="services__item-content">
+                        <h4 class="services__item-title header-m">
+                            <span class="services__item-title--yellow">Club</span> Cricket Coach
+                        </h4>
+                        <p class="services__item-text">
+                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
+                        </p>
+                    </div>
+                </div>
+                <div class="services__item swiper-slide">
+                    <div class="services__item-content">
+                        <h4 class="services__item-title header-m">
+                            <span class="services__item-title--yellow">Club</span> Cricket Coach
+                        </h4>
+                        <p class="services__item-text">
+                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__content">
+                <h2 class="about__content-title header-l">About <span class="about__content-title--yellow">Me</span>
+                </h2>
+                <div class="about__content-text">
+                    I'm currently a professional cricketer with Nottinghamshire County Cricket Club, with coaching experience in both England and Australia and a ECB Level 2 qualified coach. My goal is to help young athletes develop their skills, build confidence, and reach
+                    their full potential—on and off the field.
+
+                    </p>
+                    <p>
+                        While cricket is my primary sport, my lifelong passion for sports, including the likes of football, athletics, rugby, tennis, and hockey has shaped my broader approach to coaching and mentoring. I believe in the power of sport to build not just performance,
+                        but wellbeing also.
+                    </p>
+                    <p>
+                        Through my experience as a professional athlete—and ongoing psychology studies at The Open University—I offer insight into the mental and physical demands of high-level sport. From training and nutrition to recovery and mindset, I aim to share practical
+                        guidance that supports long-term development and healthy lifestyles.
+                    </p>
+                </div>
+                <div class="about__content-btn">
+                    <a href="#" class="btn-primary">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="shop">
+    <div class="container">
+        <div class="shop__content">
+            <h2 class="shop__content-title header-l">
+                Train with the
+                <span class="shop__content-title--yellow">Right Tools</span>
+            </h2>
+            <div class="shop__btn">
+                <a href="#" class="btn-primary">
+                    View Shop Collection
+                </a>
+            </div>
+        </div>
+
+        <!-- Fixed Swiper structure -->
+        <div class="shop__wrapper swiper">
+            <div class="swiper-wrapper">
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Moved pagination inside swiper container -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials__content">
+            <h2 class="testimonials__content-title header-l">
+                Testimonials That Speak to <span class="testimonials__content-title--yellow">My Results</span>
+            </h2>
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="testimonials__wrapper swiper-wrapper">
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                    <img src="../img/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                    <img src="../img/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Missing pagination div -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="blog blog-slider">
+    <div class="container">
+        <div class="blog__content">
+            <h2 class="blog__content-title header-l">
+                Training & Wellness <span class="blog__content-title--yellow">Blog</span>
+            </h2>
+            <div class="blog__btn">
+                <a href="#" class="btn-primary">
+                    Start Reading
+                </a>
+            </div>
+        </div>
+        <div class="blog__wrapper swiper">
+            <div class="swiper-wrapper">
+
+
+
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item swiper-slide">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+
+<?php
+get_footer();
+?>
