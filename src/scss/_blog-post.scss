@@ -1,9 +1,13 @@
 .blog__post {
     &-content {
+        width: 100%;
         padding-top: 48px;
         display: flex;
         justify-content: space-between;
         gap: 55px;
+    }
+    &-wrapper {
+        width: 60%;
     }
     &-aside {
         width: 30%;
@@ -11,7 +15,7 @@
             width: 100%;
         }
         .blog__image-btn {
-            transform: translate(308px, 313px);
+            // transform: translate(308px, 313px);
         }
     }
     &-title {
@@ -24,5 +28,17 @@
         padding-top: 48px;
         font-size: 20px;
         line-height: 1.5;
+    }
+}
+
+@media (max-width: 1155px) {
+    .blog__post-content {
+        flex-direction: column;
+    }
+    .blog__post-wrapper {
+        width: 100%;
+    }
+    .blog__post-aside {
+        width: 100%;
     }
 }

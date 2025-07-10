@@ -42,7 +42,7 @@
         }
         &-item {
             // padding: 11px 40px;
-            background-color: $deepGreenColor;
+            // background-color: $deepGreenColor;
             color: $whiteColor;
         }
         &-link {
@@ -67,15 +67,35 @@
     &__item {
         width: 31.9%; // 3 items per line for desktop
         padding-bottom: 48px;
-        
         // Tablet: 2 items per line
         @media (max-width: 1155px) {
             width: 48%;
         }
-        
         // Mobile: 1 item per line
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint768) {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: $breakpoint992) {
+    .blog__tagbar-link {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: $breakpoint768) {
+    .blog__banner {
+        padding: 20px;
+    }
+    .blog__content-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $breakpoint480) {
+    .blog__tagbar-link {
+        padding: 10px 10px;
     }
 }
