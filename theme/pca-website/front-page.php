@@ -2,7 +2,7 @@
 get_header();
 ?>
 <main>
-<section class="home">
+<section class="home" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-main.png');">
     <div class="container">
         <div class="hero">
             <div class="hero__content">
@@ -19,7 +19,7 @@ get_header();
 
                     <div class="hero__advantages-content">
                         <div class="hero__advantages-content-stars">
-                            <img src="../img/stars.svg" alt="star">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="star">
                         </div>
                         <h3 class="hero__advantages-title header-l">
                             3 Years
@@ -40,7 +40,7 @@ get_header();
 
 
 
-<section class="coaching">
+<section class="coaching" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/coaching-image.png');">
     <div class="container">
         <div class="coaching__wrapper">
 
@@ -98,50 +98,89 @@ get_header();
         </div>
         <div class="services__wrapper swiper">
             <div class="swiper-wrapper">
-                <div class="services__item swiper-slide">
-                    <div class="services__item-content">
-                        <h4 class="services__item-title header-l">
-                            <span class="services__item-title--yellow">Club</span> Cricket Coach
-                        </h4>
-                        <p class="services__item-text">
-                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
-                        </p>
+                <?php
+                $services_query = new WP_Query(array(
+                    'post_type'      => 'services',
+                    'posts_per_page' => -1,
+                    'post_status'    => 'publish',
+                    'orderby'        => 'menu_order',
+                    'order'          => 'ASC',
+                ));
+                
+                if ($services_query->have_posts()) {
+                    while ($services_query->have_posts()) {
+                        $services_query->the_post();
+                        $highlight_color = get_post_meta(get_the_ID(), '_service_highlight_color', true) ?: '#FFB000';
+                        $service_icon = get_post_meta(get_the_ID(), '_service_icon', true);
+                        $featured_image = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                        $background_style = $featured_image ? 'style="background-image: url(' . esc_url($featured_image) . ');"' : '';
+                        ?>
+                        <div class="services__item swiper-slide"  style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/service-image.jpg"');">
+                            <div class="services__item-content">
+                                <?php if ($service_icon) : ?>
+                                    <div class="services__item-icon">
+                                        <img src="<?php echo esc_url($service_icon); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" style="width: 50px; height: 50px; margin-bottom: 20px;">
+                                    </div>
+                                <?php endif; ?>
+                                
+                                <h4 class="services__item-title header-l">
+                                    <span class="services__item-title--yellow" style="color: <?php echo esc_attr($highlight_color); ?>;">
+                                        <?php the_title(); ?>
+                                    </span>
+                                </h4>
+                                
+                                <p class="services__item-text">
+                                    <?php 
+                                    if (has_excerpt()) {
+                                        the_excerpt();
+                                    } else {
+                                        echo esc_html(wp_trim_words(get_the_content(), 30));
+                                    }
+                                    ?>
+                                </p>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    wp_reset_postdata();
+                } else {
+                    // Fallback content if no services exist
+                    ?>
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-content">
+                            <h4 class="services__item-title header-l">
+                                <span class="services__item-title--yellow">Club</span> Cricket Coach
+                            </h4>
+                            <p class="services__item-text">
+                                I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="services__item swiper-slide">
-                    <div class="services__item-content">
-                        <h4 class="services__item-title header-l">
-                            <span class="services__item-title--yellow">Club</span> Cricket Coach
-                        </h4>
-                        <p class="services__item-text">
-                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
-                        </p>
+                    
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-content">
+                            <h4 class="services__item-title header-l">
+                                <span class="services__item-title--yellow">Personal</span> Training
+                            </h4>
+                            <p class="services__item-text">
+                                One-on-one coaching sessions tailored to your specific needs and skill level.
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-
-
-
-                <div class="services__item swiper-slide">
-                    <div class="services__item-content">
-                        <h4 class="services__item-title header-m">
-                            <span class="services__item-title--yellow">Club</span> Cricket Coach
-                        </h4>
-                        <p class="services__item-text">
-                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
-                        </p>
+                    
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-content">
+                            <h4 class="services__item-title header-l">
+                                <span class="services__item-title--yellow">Group</span> Sessions
+                            </h4>
+                            <p class="services__item-text">
+                                Small group training sessions for teams and academies.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="services__item swiper-slide">
-                    <div class="services__item-content">
-                        <h4 class="services__item-title header-m">
-                            <span class="services__item-title--yellow">Club</span> Cricket Coach
-                        </h4>
-                        <p class="services__item-text">
-                            I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
-                        </p>
-                    </div>
-                </div>
+                    <?php
+                }
+                ?>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -149,7 +188,7 @@ get_header();
 </section>
 
 
-<section class="about">
+<section class="about" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/about-image.png');">
     <div class="container">
         <div class="about__wrapper">
             <div class="about__content">
@@ -428,7 +467,7 @@ get_header();
 </section>
 
 
-<section class="testimonials">
+<section class="testimonials"  style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/testimonials.jpg');">
     <div class="container">
         <div class="testimonials__content">
             <h2 class="testimonials__content-title header-l">
@@ -440,14 +479,14 @@ get_header();
         <div class="testimonials__wrapper swiper-wrapper">
             <div class="testimonials__item swiper-slide">
                 <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
                     <div class="testimonials__item-content-text">
                         <p class="testimonials__item-content-text--name">Jayesh Patil</p>
                         <p class="testimonials__item-content-text--position">Athletes</p>
                     </div>
                 </div>
                 <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
                     <span class="testimonials__item-rate-number">5.0</span>
                 </div>
                 <div class="testimonials__item-text">
@@ -458,14 +497,14 @@ get_header();
 
             <div class="testimonials__item swiper-slide">
                 <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
                     <div class="testimonials__item-content-text">
                         <p class="testimonials__item-content-text--name">Jayesh Patil</p>
                         <p class="testimonials__item-content-text--position">Athletes</p>
                     </div>
                 </div>
                 <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
                     <span class="testimonials__item-rate-number">5.0</span>
                 </div>
                 <div class="testimonials__item-text">
@@ -476,14 +515,14 @@ get_header();
 
             <div class="testimonials__item swiper-slide">
                 <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
                     <div class="testimonials__item-content-text">
                         <p class="testimonials__item-content-text--name">Jayesh Patil</p>
                         <p class="testimonials__item-content-text--position">Athletes</p>
                     </div>
                 </div>
                 <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
                     <span class="testimonials__item-rate-number">5.0</span>
                 </div>
                 <div class="testimonials__item-text">
@@ -494,14 +533,31 @@ get_header();
 
             <div class="testimonials__item swiper-slide">
                 <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
                     <div class="testimonials__item-content-text">
                         <p class="testimonials__item-content-text--name">Jayesh Patil</p>
                         <p class="testimonials__item-content-text--position">Athletes</p>
                     </div>
                 </div>
                 <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
+                    <span class="testimonials__item-rate-number">5.0</span>
+                </div>
+                <div class="testimonials__item-text">
+                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                        elementum egestas lobortis.</p>
+                </div>
+            </div>
+            <div class="testimonials__item swiper-slide">
+                <div class="testimonials__item-content">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
+                    <div class="testimonials__item-content-text">
+                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
+                        <p class="testimonials__item-content-text--position">Athletes</p>
+                    </div>
+                </div>
+                <div class="testimonials__item-rate">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
                     <span class="testimonials__item-rate-number">5.0</span>
                 </div>
                 <div class="testimonials__item-text">
@@ -518,24 +574,7 @@ get_header();
                     </div>
                 </div>
                 <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
-                    <span class="testimonials__item-rate-number">5.0</span>
-                </div>
-                <div class="testimonials__item-text">
-                    <p>consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
-                        elementum egestas lobortis.</p>
-                </div>
-            </div>
-            <div class="testimonials__item swiper-slide">
-                <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
-                    <div class="testimonials__item-content-text">
-                        <p class="testimonials__item-content-text--name">Jayesh Patil</p>
-                        <p class="testimonials__item-content-text--position">Athletes</p>
-                    </div>
-                </div>
-                <div class="testimonials__item-rate">
-                    <img src="../img/stars.svg" alt="stars-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.svg" alt="stars-image">
                     <span class="testimonials__item-rate-number">5.0</span>
                 </div>
                 <div class="testimonials__item-text">

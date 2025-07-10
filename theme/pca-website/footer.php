@@ -1,4 +1,4 @@
-</body>
+
 <footer>
     <div class="container">
         <div class="footer">
@@ -14,12 +14,14 @@
             </div>
             <div class="footer__bottom">
                 <div class="footer__bottom-col-1">
-                    <img src="../img/footer-logo.png" alt="logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-logo.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>">
+</a>
                     <div class="footer__bottom-col-1--socials">
-                        <a href=""><img src="../img/facebook.svg" alt="facebook"></a>
-                        <a href=""><img src="../img/instagram.svg" alt="instagram"></a>
-                        <a href=""><img src="../img/tiktok.svg" alt="tiktok"></a>
-                        <a href=""><img src="../img/youtube.svg" alt="youtube"></a>
+                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook"></a>
+                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram"></a>
+                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/tiktok.svg" alt="tiktok"></a>
+                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" alt="youtube"></a>
 
                     </div>
                 </div>
@@ -57,3 +59,7 @@
         </div>
     </div>
 </footer>
+
+<?php wp_footer(); ?>
+</body>
+</html>

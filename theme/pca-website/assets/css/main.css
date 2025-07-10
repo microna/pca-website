@@ -303,7 +303,7 @@ b .menu__item-link:hover:after {
 
 .home {
     margin-top: 40px;
-    background-image: url("../img/hero-main.png");
+    /* background-image: url("../img/hero-main.png"); */
     background-size: contain;
     background-position: 90% 100%;
     background-repeat: no-repeat;
@@ -501,7 +501,7 @@ b .menu__item-link:hover:after {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     height: 415px;
-    background-image: url("../img/service-image.jpg");
+    /* background-image: url("../img/service-image.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
