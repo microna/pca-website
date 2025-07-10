@@ -1412,6 +1412,12 @@ footer .footer__exclaimer {
   }
 }
 
+@media (max-width: 1155px) {
+  .blog__item {
+    width: 48%;
+  }
+}
+
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
@@ -1561,6 +1567,12 @@ footer .footer__exclaimer {
 
   .footer .footer__exclamation-text {
     padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog__item {
+    width: 100%;
   }
 }
 
