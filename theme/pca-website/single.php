@@ -1,0 +1,155 @@
+<?php get_header(); ?>
+
+<section class="blog blog__post">
+    <div class="container">
+        <div class="blog__banner">
+            <h2 class="blog__content-title header-l">
+                Performance and <span class="blog__content-title--yellow"> Lifestyle Blog!</span>
+            </h2>
+            <p class="blog__content-text">
+                Based on my journey in professional sport and psychology studies, this blog shares practical lessons, training routines, nutrition strategies and mental health insights. Whether you're chasing performance goals or simply striving for a healthier mindset,
+                you'll find real-world advice supporting long-term growth—both on and off the field.
+            </p>
+
+        </div>
+
+        <div class="blog__tagbar">
+            <ul class="blog__tagbar-list">
+                <li class="blog__tagbar-item">
+                    <a href="#" class="blog__tagbar-link">
+                        health
+                    </a>
+                </li>
+                <li class="blog__tagbar-item">
+                    <a href="#" class="blog__tagbar-link">
+                        nutrition
+                    </a>
+                </li>
+                <li class="blog__tagbar-item">
+                    <a href="#" class="blog__tagbar-link">
+                        wellbeing
+                    </a>
+                </li>
+                <li class="blog__tagbar-item">
+                    <a href="#" class="blog__tagbar-link">
+                        fitness
+                    </a>
+                </li>
+                <li class="blog__tagbar-item">
+                    <a href="#" class="blog__tagbar-link">
+                        coaching
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="blog__post-content">
+            <div class="blog__post-wrapper">
+                <div class="blog__item-info-content">
+                    <span class="blog__item-info-content-author">
+                        Ben Martindale
+                    </span>
+                    <span class="blog__item-info-content-date">
+                        10 Nov, 2025
+                    </span>
+                </div>
+                <h2 class="blog__post-title header-l">
+                    What <span class="blog__post-title--yellow"> is Lorem Ipsum?</span>
+                </h2>
+                <p class="blog__post-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p class="blog__post-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p class="blog__post-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="blog__post-aside">
+                <div class="blog__item">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
+                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></button>
+
+
+                    </div>
+                    <div class="blog__item-info">
+
+
+                        <div class="blog__item-info-tags">
+                            <a class="blog__item-info-tags-item">
+                                Training
+                            </a>
+                            <a class="blog__item-info-tags-item">
+                                Wellness
+                            </a>
+
+                        </div>
+                        <div class="blog__item-info-content">
+                            <h4 class="blog__item-info-content--title">
+                                What is Lorem Ipsum? Why do we use it?
+                            </h4>
+                            <span class="blog__item-info-content-author">
+                                Ben Martindale
+                            </span>
+                            <span class="blog__item-info-content-date">
+                                10 Nov, 2025
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<?php get_footer(); ?>
