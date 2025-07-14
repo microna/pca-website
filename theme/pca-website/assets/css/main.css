@@ -185,9 +185,9 @@ body.dark {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #FFB000;
+    background-color: #FFB000 !important;
     width: 40px !important;
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
 
 .swiper-pagination-bullet {
@@ -491,8 +491,8 @@ b .menu__item-link:hover:after {
 }
 
 .services__wrapper {
-    padding-top: 48px;
-    padding-bottom: 100px;
+    padding-top: 48px !important;
+    padding-bottom: 100px !important;
     overflow: hidden;
 }
 
@@ -641,9 +641,9 @@ b .menu__item-link:hover:after {
 }
 
 .shop__wrapper {
-    padding-top: 48px;
-    padding-bottom: 100px;
-    overflow: hidden;
+    padding-top: 48px !important;
+    padding-bottom: 100px !important;
+    overflow: hidden !important;
 }
 
 .shop__item {
@@ -908,7 +908,7 @@ b .menu__item-link:hover:after {
 }
 
 .blog__wrapper {
-    padding-top: 48px;
+    padding-top: 48px !important;
     overflow: hidden;
 }
 
@@ -1080,7 +1080,7 @@ b .menu__item-link:hover:after {
 
 .blog__banner {
     color: #FFFFFF;
-    background-image: url("../img/blog-page-bg.jpg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/blog-page-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1700,4 +1700,42 @@ footer .footer__exclaimer {
     .coaching__advantages {
         margin-left: 0px;
     }
+}
+
+@media screen and (max-width: 991.98px) {
+    .about,
+    .coaching {
+        background-image: none !important;
+    }
+    .about__wrapper .coaching__wrapper {
+        justify-content: center !important;
+    }
+    .about__content,
+    .coaching__content {
+        max-width: 80% !important;
+    }
+    .coaching__advantages {
+        margin-left: 0px;
+    }
+}
+
+.blog__item-info-content--title a {
+    color: black;
+}
+
+.blog__image-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__bottom-col-2--list .menu__item-link {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.footer__bottom-col-2--list .menu__item-link:hover {
+    background: none;
+    opacity: 0.7;
+    border-radius: 0;
 }

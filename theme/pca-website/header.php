@@ -22,14 +22,16 @@
 </a>
                 </div>
                 <nav>
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Coaching</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Shop</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Blog </a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Testimonials </a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contact </a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'menu_class' => 'menu',
+                        'container' => false,
+                        'link_before' => '',
+                        'link_after' => '',
+                        'fallback_cb' => 'pca_fallback_menu'
+                    ));
+                    ?>
                 </nav>
 
                 <button class="burger">

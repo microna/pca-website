@@ -237,7 +237,7 @@ get_header();
         <div class="shop__wrapper swiper">
             <div class="swiper-wrapper">
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -261,7 +261,7 @@ get_header();
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -285,7 +285,7 @@ get_header();
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -309,32 +309,7 @@ get_header();
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
-                        <button class="shop__image-btn">
-                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="shop__item-info">
-                        <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
-                            <span class="shop__item-info-content--condition">(Very good)</span>
-                        </div>
-                        <div class="shop__item-info-actions">
-                            <div class="shop__item-info-actions-btn">
-                                <button class="shop__item-info-actions-btn--color"></button>
-                                <button class="shop__item-info-actions-btn--color"></button>
-                            </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -359,7 +334,7 @@ get_header();
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -384,7 +359,7 @@ get_header();
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -409,7 +384,7 @@ get_header();
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -434,7 +409,32 @@ get_header();
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('../img/1750629206.jpeg');">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
+                        <button class="shop__image-btn">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shop__item-info">
+                        <div class="shop__item-info-content">
+                            <span class="shop__item-info-content--size">Size: M</span>
+                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--condition">(Very good)</span>
+                        </div>
+                        <div class="shop__item-info-actions">
+                            <div class="shop__item-info-actions-btn">
+                                <button class="shop__item-info-actions-btn--color"></button>
+                                <button class="shop__item-info-actions-btn--color"></button>
+                            </div>
+                            <span class="shop__item-info-actions-price">£16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item swiper-slide">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
                         <button class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -600,285 +600,161 @@ get_header();
                 </a>
             </div>
         </div>
-        <div class="blog__wrapper swiper">
-            <div class="swiper-wrapper">
+        <?php
+// Configuration - you can modify these as needed
+$blog_config = array(
+    'post_type' => 'post',           // Change to your custom post type if needed
+    'posts_per_page' => 8,           // Number of posts to show
+    'category' => '',                // Specific category slug (optional)
+    'exclude_current' => true,       // Exclude current post if on single post page
+    'show_excerpt' => false,         // Show excerpt in addition to title
+    'excerpt_length' => 20,          // Number of words for excerpt
+    'default_image' => 'default-blog-image.jpg' // Default image name
+);
 
+// Build query arguments
+$query_args = array(
+    'post_type' => $blog_config['post_type'],
+    'posts_per_page' => $blog_config['posts_per_page'],
+    'post_status' => 'publish',
+    'orderby' => 'date',
+    'order' => 'DESC'
+);
 
+// Exclude current post if on single post page
+if ($blog_config['exclude_current'] && is_single()) {
+    $query_args['post__not_in'] = array(get_the_ID());
+}
 
+// Filter by category if specified
+if (!empty($blog_config['category'])) {
+    $query_args['category_name'] = $blog_config['category'];
+}
+
+// Execute query
+$blog_query = new WP_Query($query_args);
+?>
+
+<div class="blog__wrapper swiper">
+    <div class="swiper-wrapper">
+        <?php if ($blog_query->have_posts()) : ?>
+            <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
+                <?php
+                // Get featured image with fallback
+                $featured_image = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                if (!$featured_image) {
+                    $featured_image = get_template_directory_uri() . '/assets/images/' . $blog_config['default_image'];
+                }
+                
+                // Get post categories/terms
+                $terms = wp_get_post_terms(get_the_ID(), 'category');
+                if ($blog_config['post_type'] !== 'post') {
+                    // For custom post types, get the first taxonomy
+                    $taxonomies = get_object_taxonomies($blog_config['post_type']);
+                    if (!empty($taxonomies)) {
+                        $terms = wp_get_post_terms(get_the_ID(), $taxonomies[0]);
+                    }
+                }
+                
+                // Get formatted date
+                $post_date = get_the_date('d M, Y');
+                
+                // Get author
+                $author_name = get_the_author();
+                
+                // Get excerpt if enabled
+                $excerpt = '';
+                if ($blog_config['show_excerpt']) {
+                    $excerpt = wp_trim_words(get_the_excerpt(), $blog_config['excerpt_length'], '...');
+                }
+                ?>
+                
                 <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
+                    <div class="blog__image" style="background-image: url('<?php echo esc_url($featured_image); ?>');">
+                        <a href="<?php the_permalink(); ?>" class="blog__image-btn" aria-label="Read more about <?php the_title(); ?>">
+                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
+                    
                     <div class="blog__item-info">
-
-
+                        <?php if (!empty($terms)) : ?>
                         <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
+                            <?php 
+                            $count = 0;
+                            foreach ($terms as $term) :
+                                if ($count >= 2) break; // Limit to 2 terms
+                            ?>
+                                <a href="<?php echo esc_url(get_term_link($term)); ?>" class="blog__item-info-tags-item">
+                                    <?php echo esc_html($term->name); ?>
+                                </a>
+                            <?php 
+                                $count++;
+                            endforeach;
+                            ?>
                         </div>
+                        <?php endif; ?>
+                        
                         <div class="blog__item-info-content">
                             <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h4>
+                            
+                            <?php if ($blog_config['show_excerpt'] && !empty($excerpt)) : ?>
+                            <p class="blog__item-info-content--excerpt">
+                                <?php echo esc_html($excerpt); ?>
+                            </p>
+                            <?php endif; ?>
+                            
                             <span class="blog__item-info-content-author">
-                                Ben Martindale
+                                <?php echo esc_html($author_name); ?>
                             </span>
                             <span class="blog__item-info-content-date">
-                                10 Nov, 2025
+                                <?php echo esc_html($post_date); ?>
                             </span>
-
                         </div>
                     </div>
                 </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
-                    </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
+                
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            
+        <?php else : ?>
+            <!-- Fallback when no posts found -->
+            <div class="blog__item swiper-slide">
+                <div class="blog__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/<?php echo $blog_config['default_image']; ?>');">
+                    <div class="blog__image-btn">
+                        <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                 </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
+                
+                <div class="blog__item-info">
+                    <div class="blog__item-info-tags">
+                        <span class="blog__item-info-tags-item">Blog</span>
                     </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
+                    
+                    <div class="blog__item-info-content">
+                        <h4 class="blog__item-info-content--title">
+                            No posts found
+                        </h4>
+                        <span class="blog__item-info-content-author">
+                            Admin
+                        </span>
+                        <span class="blog__item-info-content-date">
+                            <?php echo date('d M, Y'); ?>
+                        </span>
                     </div>
                 </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
-                    </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
-                    </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
-                    </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__item swiper-slide">
-                    <div class="blog__image" style="background-image: url('../img/blog-image.jpg');">
-                        <button class="blog__image-btn"><svg width="72" height="73" viewBox="0 0 72 73" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-
-
-                    </div>
-                    <div class="blog__item-info">
-
-
-                        <div class="blog__item-info-tags">
-                            <a class="blog__item-info-tags-item">
-                                Training
-                            </a>
-                            <a class="blog__item-info-tags-item">
-                                Wellness
-                            </a>
-
-                        </div>
-                        <div class="blog__item-info-content">
-                            <h4 class="blog__item-info-content--title">
-                                What is Lorem Ipsum? Why do we use it?
-                            </h4>
-                            <span class="blog__item-info-content-author">
-                                Ben Martindale
-                            </span>
-                            <span class="blog__item-info-content-date">
-                                10 Nov, 2025
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
+        <?php endif; ?>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
 
     </div>
 </section>

@@ -29,13 +29,13 @@
                     <h5 class="footer__bottom-header">
                         Navigation
                     </h5>
-                    <ul class="footer__bottom-col-2--list">
-                        <li class="footer__bottom-col-2--item"><a href="#">Home</a></li>
-                        <li class="footer__bottom-col-2--item"><a href="#">Coaching</a></li>
-                        <li class="footer__bottom-col-2--item"><a href="#">Shop</a></li>
-                        <li class="footer__bottom-col-2--item"><a href="#">Testimonials</a></li>
-                        <li class="footer__bottom-col-2--item"><a href="#">Blog</a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer',
+                        'menu_class' => 'footer__bottom-col-2--list',
+                        'container' => false,
+                    ));
+                    ?>
                 </div>
 
                 <div class="footer__bottom-col-3">

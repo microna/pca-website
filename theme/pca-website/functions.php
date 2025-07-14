@@ -42,6 +42,38 @@ function pca_disable_gutenberg_widgets() {
 }
 add_action('after_setup_theme', 'pca_disable_gutenberg_widgets');
 
+function pca_theme_setup() {
+    // Add theme support for post thumbnails (featured images)
+    add_theme_support('post-thumbnails');
+    
+    // Set custom image sizes for your theme
+    add_image_size('blog-thumbnail', 400, 432, true); // For blog cards
+    add_image_size('blog-large', 800, 600, true); // For blog post headers
+    add_image_size('shop-thumbnail', 400, 432, true); // For shop items
+    
+    // Add theme support for title tag
+    add_theme_support('title-tag');
+    
+    // Add theme support for HTML5 markup
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'style',
+        'script'
+    ));
+
+    register_nav_menus(array(
+        'primary' => __('Primary Menu', 'pca-theme'),
+        'footer' => __('Footer Menu', 'pca-theme'),
+        'mobile' => __('Mobile Menu', 'pca-theme')
+    ));
+}
+add_action('after_setup_theme', 'pca_theme_setup');
+
+
 
 // Register Services Custom Post Type
 function pca_register_services_cpt() {
@@ -93,3 +125,70 @@ function pca_register_services_cpt() {
     register_post_type('services', $args);
 }
 add_action('init', 'pca_register_services_cpt');
+
+
+
+// In your theme's functions.php
+function add_dynamic_shop_css() {
+    ?>
+    <style>
+    .shop__image::before {
+        position: absolute;
+        width: 174px;
+        height: 174px;
+        content: "";
+        background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/curv.svg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 20%;
+        bottom: -4px; 
+        right: -7px;
+    }
+    .blog__image::before {
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    content: "";
+    background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/curv.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+    bottom: -4px;
+    right: -7px;
+}
+.home .hero__advantages-item::before {
+    z-index: 100;
+    content: "";
+    background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/quote-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24px;
+    left: 14px;
+    width: 36px;
+    height: 36px;
+}
+
+.testimonials__item::after {
+    content: "";
+    position: absolute;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/quotegreay.svg");
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20px;
+    right: 20px;
+}
+    </style>
+    <?php
+}
+add_action('wp_head', 'add_dynamic_shop_css');
+
+function add_class_to_menu_links($atts, $item, $args) {
+    $atts['class'] = isset($atts['class']) ? $atts['class'] . ' menu__item-link' : 'menu__item-link';
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_class_to_menu_links', 10, 3);
