@@ -24,6 +24,9 @@ function pca_enqueue_scripts() {
         '1.0.0',
         true
     );
+
+
+ 
     
     // Enqueue your main JavaScript file (depends on Swiper)
     wp_enqueue_script(
@@ -35,6 +38,17 @@ function pca_enqueue_scripts() {
     );
 }
 add_action('wp_enqueue_scripts', 'pca_enqueue_scripts');
+
+// function custom_enqueue_gsap() {
+//     wp_enqueue_script(
+//         'gsap', // Handle
+//         'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js', // Source URL
+//         array(), // Dependencies (e.g., jQuery if needed)
+//         '3.13.0', // Version
+//         true // Load in footer
+//     );
+// }
+// add_action('wp_enqueue_scripts', 'custom_enqueue_gsap');
 
 
 function pca_disable_gutenberg_widgets() {

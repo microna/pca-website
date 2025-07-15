@@ -107,3 +107,46 @@ const servicewiper = new Swiper('.services .swiper', {
         el: '.services .swiper-scrollbar',
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if GSAP is loaded
+    if (typeof gsap !== 'undefined') {
+        // Create hero section timeline
+        const heroTl = gsap.timeline({ delay: 0.2 });
+        
+        heroTl
+            // Animate hero title first
+            .from(".hero__title", {
+                duration: 1.2,
+                y: 50,
+                opacity: 0,
+                ease: "power2.out"
+            })
+            // Animate hero advantages item (slide in from left)
+            .from(".hero__advantages-item", {
+                duration: 0.8,
+                x: -50,
+                opacity: 0,
+                ease: "power2.out"
+            }, "-=0.8") // Start 0.8 seconds before the previous animation ends
+            // Animate hero advantages content (slide in from right)
+            .from(".hero__advantages-content", {
+                duration: 0.8,
+                x: 50,
+                opacity: 0,
+                ease: "power2.out"
+            }, "-=0.6") // Start 0.6 seconds before the previous animation ends
+            // Animate the CTA button
+            .from(".hero__content-btn", {
+                duration: 0.6,
+                y: 30,
+                opacity: 0,
+                ease: "power2.out"
+            }, "-=0.4"); // Start 0.4 seconds before the previous animation ends
+        
+        console.log('GSAP timeline animations loaded successfully');
+    } else {
+        console.error('GSAP is not loaded. Please check your functions.php file.');
+    }
+});

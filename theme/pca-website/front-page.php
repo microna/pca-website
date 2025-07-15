@@ -595,7 +595,7 @@ get_header();
                 Training & Wellness <span class="blog__content-title--yellow">Blog</span>
             </h2>
             <div class="blog__btn">
-                <a href="#" class="btn-primary">
+                <a href="<?php echo home_url('/blog'); ?>" class="btn-primary">
                     Start Reading
                 </a>
             </div>
@@ -761,6 +761,8 @@ $blog_query = new WP_Query($query_args);
 
 
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 <?php
 get_footer();
