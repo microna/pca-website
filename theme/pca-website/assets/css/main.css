@@ -143,22 +143,24 @@ body.dark {
     }
 }
 
-.btn-primary {
-    text-align: center;
-    display: inline-block;
-    color: #FFFFFF;
-    background-color: #FFB000;
-    padding: 20px 40px;
-    border-radius: 50px;
-    font-size: 20x;
-    font-weight: 600;
-    -webkit-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+.btn-primary,
+.wpcf7-submit.btn-primar {
+    text-align: center !important;
+    display: inline-block !important;
+    color: #FFFFFF !important;
+    background-color: #FFB000 !important;
+    padding: 20px 40px !important;
+    border-radius: 50px !important;
+    font-size: 20x !important;
+    font-weight: 600 !important;
+    -webkit-transition: 0.5s ease-in-out !important;
+    -o-transition: 0.5s ease-in-out !important;
+    transition: 0.5s ease-in-out !important;
 }
 
-.btn-primary:hover {
-    background-color: #FFC84D;
+.btn-primary:hover,
+.wpcf7-submit.btn-primar:hover {
+    background-color: #FFC84D !important;
 }
 
 .shop__image-btn:hover,
@@ -303,6 +305,7 @@ b .menu__item-link:hover:after {
 
 .home {
     margin-top: 40px;
+    /* padding-bottom: 100px; */
     /* background-image: url("../img/hero-main.png"); */
     background-size: contain;
     background-position: 90% 100%;
@@ -496,11 +499,18 @@ b .menu__item-link:hover:after {
     overflow: hidden;
 }
 
+.services__wrapper .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
 .services__item {
     width: 100% !important;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     height: 415px;
+    min-height: 415px;
+    max-height: 415px;
     /* background-image: url("../img/service-image.jpg"); */
     background-size: cover;
     background-position: center;
@@ -522,6 +532,7 @@ b .menu__item-link:hover:after {
 
 .services__item-content {
     height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -538,6 +549,7 @@ b .menu__item-link:hover:after {
     position: relative;
     z-index: 2;
     text-align: center;
+    overflow: hidden;
 }
 
 .services__item-title {
@@ -547,6 +559,7 @@ b .menu__item-link:hover:after {
     color: #FFFFFF;
     padding-bottom: 16px;
     margin-bottom: 0;
+    flex-shrink: 0;
 }
 
 .services__item-title--yellow {
@@ -560,12 +573,21 @@ b .menu__item-link:hover:after {
     line-height: 1.5;
     margin: 0;
     max-width: 100%;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .services__item.swiper-slide {
     width: calc(33.333% - 20px) !important;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    height: auto !important;
+    display: flex;
+    align-items: stretch;
 }
 
 .about {
@@ -1025,7 +1047,7 @@ b .menu__item-link:hover:after {
 .shop__banner {
     min-height: 530px;
     border-radius: 50px;
-    background: url("../img/shop-bg.jpg") no-repeat center center;
+    /* background: url("../img/shop-bg.jpg") no-repeat center center; */
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1443,12 +1465,18 @@ footer .footer__exclaimer {
         width: 50vh;
     }
     .services__item.swiper-slide {
-        width: calc(50% - 20px) !important;
+        width: calc(100% - 20px) !important;
         -ms-flex-negative: 0;
         flex-shrink: 0;
+        height: auto !important;
+        display: flex;
+        align-items: stretch;
     }
     .services__item {
-        height: 490px;
+        height: 350px;
+        min-height: 350px;
+        max-height: 350px;
+        padding: 20px;
     }
     .services__content {
         -webkit-box-orient: vertical;
@@ -1600,6 +1628,8 @@ footer .footer__exclaimer {
     }
     .services__item {
         height: 400px;
+        min-height: 400px;
+        max-height: 400px;
         padding: 30px;
     }
     .services__item-title {
@@ -1738,4 +1768,109 @@ footer .footer__exclaimer {
     background: none;
     opacity: 0.7;
     border-radius: 0;
+}
+
+
+/* modal styling */
+
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    display: none;
+}
+
+.modal__wrapper .modal {
+    text-align: center;
+    background: rgba(31, 31, 31, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 50px;
+    min-height: 500px;
+    width: 400px;
+    max-width: 90vw;
+    color: #FFFFFF;
+    /* border: 1px solid rgba(255, 176, 0, 0.3); */
+}
+
+.modal__wrapper .modal__title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.modal__wrapper .modal__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+}
+
+.modal__wrapper .modal__body form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__wrapper .modal__body input,
+.modal__wrapper .modal__body textarea {
+    padding: 17px;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    background-color: white;
+    border-radius: 50px;
+    background: white;
+    color: black;
+    font-family: "Lufga", sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.modal__wrapper .modal__body input:focus,
+.modal__wrapper .modal__body textarea:focus {
+    outline: none;
+    /* border-color: #FFB000; */
+    background: white;
+}
+
+.modal__wrapper .modal__body input::placeholder,
+.modal__wrapper .modal__body textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__wrapper .modal__body textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.modal__wrapper .modal__body .btn-primary {
+    margin-top: 10px;
+    align-self: center;
+    min-width: 150px;
+}
+
+.modal__wrapper .modal__close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.modal__wrapper .modal__close:hover {
+    opacity: 0.7;
+}
+
+.modal__wrapper .modal__close img {
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
 }

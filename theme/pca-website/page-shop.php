@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="shop">
     <div class="container">
-        <div class="shop__banner">
+        <div class="shop__banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-bg.jpg');">
             <h2 class="shop__banner-title header-l">
                 Welcome to my <span class="shop__content-title--yellow">Shop</span>
             </h2>
@@ -10,7 +10,7 @@
 
             </p>
             <div class="shop__-btn">
-                <a href="#" class="btn-primary">View Shop Collection</a>
+                <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="btn-primary">View Shop Collection</a>
             </div>
         </div>
     </div>

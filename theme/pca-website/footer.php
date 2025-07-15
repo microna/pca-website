@@ -9,7 +9,7 @@
                     </h3>
                 </div>
                 <div class="footer__top-right">
-                    <a href="#" class="btn-primary">Get in Touch</a>
+                    <a href="#" class="btn-primary modal__btn">Get in Touch</a>
                 </div>
             </div>
             <div class="footer__bottom">

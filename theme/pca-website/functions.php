@@ -206,3 +206,106 @@ function add_class_to_menu_links($atts, $item, $args) {
     return $atts;
 }
 add_filter('nav_menu_link_attributes', 'add_class_to_menu_links', 10, 3);
+
+// Contact Form 7 Support
+function pca_contact_form_7_support() {
+    // Add theme support for Contact Form 7
+    add_theme_support('contact-form-7');
+    
+    // Remove default Contact Form 7 styles to use theme styles
+    add_filter('wpcf7_load_css', '__return_false');
+}
+add_action('after_setup_theme', 'pca_contact_form_7_support');
+
+// Add custom CSS for Contact Form 7 integration
+function pca_cf7_custom_styles() {
+    ?>
+    <style>
+        .wpcf7-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .wpcf7-form input[type="text"],
+        .wpcf7-form input[type="email"],
+        .wpcf7-form input[type="tel"],
+        .wpcf7-form input[type="number"],
+        .wpcf7-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff;
+            transition: border-color 0.3s ease;
+        }
+        
+        .wpcf7-form input[type="text"]:focus,
+        .wpcf7-form input[type="email"]:focus,
+        .wpcf7-form input[type="tel"]:focus,
+        .wpcf7-form input[type="number"]:focus,
+        .wpcf7-form textarea:focus {
+            outline: none;
+            border-color: #007cba;
+        }
+        
+        .wpcf7-form input::placeholder,
+        .wpcf7-form textarea::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .wpcf7-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .wpcf7-form input[type="submit"] {
+            background-color: #007cba;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .wpcf7-form input[type="submit"]:hover {
+            background-color: #005a87;
+        }
+        
+        .wpcf7-response-output {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .wpcf7-mail-sent-ok {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .wpcf7-mail-sent-ng,
+        .wpcf7-aborted {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .wpcf7-validation-errors {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .wpcf7-not-valid-tip {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+    <?php
+}
+add_action('wp_head', 'pca_cf7_custom_styles');

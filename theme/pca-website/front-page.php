@@ -2,6 +2,16 @@
 get_header();
 ?>
 <main>
+    <!-- Modal -->
+ <div class="modal__wrapper">
+    <div class="modal">
+        <div class="modal__close"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+        <div class="modal__title  header-l"><span class="hero__title--yellow"> Get in touch</span>  with me</div>
+        <div class="modal__body">
+            <?php echo do_shortcode('[contact-form-7 id="8d4ef69" title="Contact form 1"]'); ?>
+        </div>
+    </div>
+</div> 
 <section class="home" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-main.png');">
     <div class="container">
         <div class="hero">
@@ -28,7 +38,7 @@ get_header();
                     </div>
                 </div>
                 <div class="hero__content-btn">
-                    <a href="#" class="btn-primary">
+                    <a href="#" class="btn-primary modal__btn">
                         Start Your Journey
                     </a>
                 </div>
@@ -91,7 +101,7 @@ get_header();
                 <span class="services__content-title--yellow">Services</span>
             </h2>
             <div class="services__btn">
-                <a href="#" class="btn-primary">
+                <a href="#" class="btn-primary modal__btn">
                     Get in touch
                 </a>
             </div>
@@ -209,7 +219,7 @@ get_header();
                     </p>
                 </div>
                 <div class="about__content-btn">
-                    <a href="#" class="btn-primary">
+                    <a href="#" class="btn-primary modal__btn">
                         Get in touch
                     </a>
                 </div>
@@ -227,7 +237,7 @@ get_header();
                 <span class="shop__content-title--yellow">Right Tools</span>
             </h2>
             <div class="shop__btn">
-                <a href="#" class="btn-primary">
+                <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="btn-primary">
                     View Shop Collection
                 </a>
             </div>
@@ -238,17 +248,17 @@ get_header();
             <div class="swiper-wrapper">
                 <div class="shop__item swiper-slide">
                     <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+            </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
                             <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--title">Notts Adidas County Championship Shirt</span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -256,23 +266,23 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£10.00</span>
                         </div>
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-item1.jpeg');">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+            </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--size">Size: L</span>
+                            <span class="shop__item-info-content--title">Notts Adidas Polo Shir</span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -280,23 +290,23 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£13.00</span>
                         </div>
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-item2.jpeg');">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--size">Size: L</span>
+                            <span class="shop__item-info-content--title">Adidas Notts Cricket Hoodie </span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -304,23 +314,23 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£18.00</span>
                         </div>
                     </div>
                 </div>
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-item3.jpeg');">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+            </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
                             <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--title">Notts Adidas Cricket Playing Trousers</span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -328,24 +338,24 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£12.00</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-item4.jpeg');">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--size">Size:  UK10</span>
+                            <span class="shop__item-info-content--title">Me + U Cricket Spikes</span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -353,24 +363,24 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£80.00</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
+                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/shop-item5.jpeg');">
+                        <a href="https://www.vinted.co.uk/member/68498979-brknboundaries" class="shop__image-btn">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+            </a>
                     </div>
                     <div class="shop__item-info">
                         <div class="shop__item-info-content">
                             <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
+                            <span class="shop__item-info-content--title">Samurai Derbyshire County Championship Shirt</span>
                             <span class="shop__item-info-content--condition">(Very good)</span>
                         </div>
                         <div class="shop__item-info-actions">
@@ -378,85 +388,16 @@ get_header();
                                 <button class="shop__item-info-actions-btn--color"></button>
                                 <button class="shop__item-info-actions-btn--color"></button>
                             </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
+                            <span class="shop__item-info-actions-price">£18.00</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
-                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="shop__item-info">
-                        <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
-                            <span class="shop__item-info-content--condition">(Very good)</span>
-                        </div>
-                        <div class="shop__item-info-actions">
-                            <div class="shop__item-info-actions-btn">
-                                <button class="shop__item-info-actions-btn--color"></button>
-                                <button class="shop__item-info-actions-btn--color"></button>
-                            </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
-                        </div>
-                    </div>
-                </div>
+               
 
-                <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
-                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="shop__item-info">
-                        <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
-                            <span class="shop__item-info-content--condition">(Very good)</span>
-                        </div>
-                        <div class="shop__item-info-actions">
-                            <div class="shop__item-info-actions-btn">
-                                <button class="shop__item-info-actions-btn--color"></button>
-                                <button class="shop__item-info-actions-btn--color"></button>
-                            </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
-                        </div>
-                    </div>
-                </div>
+              
 
-                <div class="shop__item swiper-slide">
-                    <div class="shop__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/1750629206.jpeg');">
-                        <button class="shop__image-btn">
-                            <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 51.0811L51 21.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M21 21.0811H51V51.0811" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="shop__item-info">
-                        <div class="shop__item-info-content">
-                            <span class="shop__item-info-content--size">Size: M</span>
-                            <span class="shop__item-info-content--title">Shirt</span>
-                            <span class="shop__item-info-content--condition">(Very good)</span>
-                        </div>
-                        <div class="shop__item-info-actions">
-                            <div class="shop__item-info-actions-btn">
-                                <button class="shop__item-info-actions-btn--color"></button>
-                                <button class="shop__item-info-actions-btn--color"></button>
-                            </div>
-                            <span class="shop__item-info-actions-price">£16.00</span>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
             <!-- Moved pagination inside swiper container -->
@@ -567,7 +508,7 @@ get_header();
             </div>
             <div class="testimonials__item swiper-slide">
                 <div class="testimonials__item-content">
-                    <img src="../img/avatar.png" alt="avatar-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="avatar-image">
                     <div class="testimonials__item-content-text">
                         <p class="testimonials__item-content-text--name">Jayesh Patil</p>
                         <p class="testimonials__item-content-text--position">Athletes</p>
