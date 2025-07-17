@@ -46,6 +46,7 @@ get_header();
             </div>
 
         </div>
+    </div>
 </section>
 
 
@@ -153,42 +154,6 @@ get_header();
                         <?php
                     }
                     wp_reset_postdata();
-                } else {
-                    // Fallback content if no services exist
-                    ?>
-                    <div class="services__item swiper-slide">
-                        <div class="services__item-content">
-                            <h4 class="services__item-title header-l">
-                                <span class="services__item-title--yellow">Club</span> Cricket Coach
-                            </h4>
-                            <p class="services__item-text">
-                                I partner with clubs to deliver structured training, match-day coaching, and long-term player development across all age groups.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item swiper-slide">
-                        <div class="services__item-content">
-                            <h4 class="services__item-title header-l">
-                                <span class="services__item-title--yellow">Personal</span> Training
-                            </h4>
-                            <p class="services__item-text">
-                                One-on-one coaching sessions tailored to your specific needs and skill level.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item swiper-slide">
-                        <div class="services__item-content">
-                            <h4 class="services__item-title header-l">
-                                <span class="services__item-title--yellow">Group</span> Sessions
-                            </h4>
-                            <p class="services__item-text">
-                                Small group training sessions for teams and academies.
-                            </p>
-                        </div>
-                    </div>
-                    <?php
                 }
                 ?>
             </div>
@@ -696,7 +661,6 @@ $blog_query = new WP_Query($query_args);
     </div>
     <div class="swiper-pagination"></div>
 </div>
-
     </div>
 </section>
 

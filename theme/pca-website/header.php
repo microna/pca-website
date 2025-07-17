@@ -7,10 +7,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('main__body'); ?>>
 <?php wp_body_open(); ?>
-<body class="main__body">
-    <html>
 <header>
     <!-- Navbar -->
     <div class="header">
